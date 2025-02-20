@@ -18,7 +18,7 @@ const ContentInner = styled.div`
   padding: 0 20px;
 
   @media (max-width: ${breakpoints.sp}) {
-    padding: 0 12px;
+    padding: 0 8px;
     margin: 0 0 80px;
   }
 `;
