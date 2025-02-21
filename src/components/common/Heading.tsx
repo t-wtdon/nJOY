@@ -8,7 +8,7 @@ const HeadArea = styled.div`
 
 const HeadingContent = styled.h2`
   display: inline-block;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   padding-bottom: 4px;
   border-bottom: 2px solid #00d2f2;

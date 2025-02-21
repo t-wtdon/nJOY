@@ -13,7 +13,6 @@ const Container = styled.div`
 
 const Box = styled.div`
   width: 100%;
-  max-width: 800px;
   padding: 20px;
   margin: 0 auto;
   background: #cae2e6;

@@ -25,10 +25,9 @@ const Box = styled.div`
   align-items: center;
   justify-content: center;
   width: 40%;
-  opacity: 0.8;
   height: calc(100vh - 70px);
-  background: #fff;
-  z-index: 1;
+  background: rgba(0, 151, 167, 0.75);
+  color: #fff;
 
   @media (max-width: ${breakpoints.tablet}) {
     width: 100%;
@@ -41,38 +40,19 @@ const Title = styled.h3`
   font-size: 40px;
   font-weight: bold;
   margin: 0;
-
-  &:before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #d5f2e8;
-    z-index: -1;
-  }
-  &:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 50px);
-    left: -40px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #d5eef2;
-    z-index: -1;
-  }
+  text-shadow: 2px 2px 5px rgba(51, 51, 51, 0.05);
+  line-height: 1.6;
 `;
 
 export const Mv = () => {
   return (
     <MainVisualWrap>
       <Box>
-        <Title>株式会社nJOY</Title>
+        <Title>
+          家族のように
+          <br />
+          寄り添う介護を。
+        </Title>
       </Box>
       <MainVisual mvImage={mv} />
     </MainVisualWrap>
