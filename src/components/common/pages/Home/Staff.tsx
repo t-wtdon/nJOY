@@ -1,113 +1,3 @@
-// import React from "react";
-// import styled from "styled-components";
-// import { Heading } from "../../Heading";
-// import { breakpoints } from "../../../../styles/breakpoints";
-
-// const staff1 = require("../../../../assets/images/home/staff1.jpg");
-// const staff2 = require("../../../../assets/images/home/staff2.jpg");
-// const staff3 = require("../../../../assets/images/home/staff3.jpg");
-
-// const Container = styled.div`
-//   padding: 60px 0;
-
-//   @media (max-width: ${breakpoints.tablet}) {
-//     padding: 20px 0;
-//   }
-// `;
-
-// const List = styled.ul`
-//   list-style-type: none;
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 16px;
-//   padding: 0;
-//   margin: 0;
-// `;
-
-// const Item = styled.li`
-//   display: flex;
-//   width: calc(50% - 8px);
-
-//   @media (max-width: ${breakpoints.tablet}) {
-//     width: 100%;
-//   }
-
-//   @media (max-width: ${breakpoints.sp}) {
-//     flex-wrap: wrap;
-//     justify-content: center;
-//   }
-// `;
-
-// const Content = styled.div`
-//   @media (max-width: ${breakpoints.sp}) {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//   }
-// `;
-
-// const Image = styled.img`
-//   width: 200px;
-//   height: 200px;
-//   margin-right: 20px;
-//   object-fit: cover;
-// `;
-// const Name = styled.h3`
-//   margin: 0;
-//   margin-bottom: 8px;
-
-//   @media (max-width: ${breakpoints.sp}) {
-//     width: 100%;
-//     text-align: center;
-//     margin-top: 12px;
-//   }
-// `;
-
-// const Text = styled.p`
-//   margin-bottom: 0;
-// `;
-
-// export const Staff = () => {
-//   return (
-//     <Container>
-//       <Heading title="スタッフ紹介" />
-
-//       <List>
-//         <Item>
-//           <Image src={staff1} alt="" />
-//           <Content>
-//             <Name>山田花子</Name>
-//             <span>代表・管理者</span>
-//             <Text>
-//               利用者様が安心して暮らせるよう、一人ひとりの想いに寄り添い、心のこもった介護を提供します。地域に根ざした温かいサービスを目指しています。
-//             </Text>
-//           </Content>
-//         </Item>
-//         <Item>
-//           <Image src={staff2} alt="" />
-//           <Content>
-//             <Name>山田太郎</Name>
-//             <span>サービス提供責任者</span>
-//             <Text>
-//               ご利用者様とご家族が笑顔で過ごせるよう、きめ細やかなサポートを心がけています。日々の暮らしに寄り添い、安心と信頼を大切にしたケアを提供いたします。
-//             </Text>
-//           </Content>
-//         </Item>
-//         <Item>
-//           <Image src={staff3} alt="" />
-//           <Content>
-//             <Name>鈴木 花子</Name>
-//             <span>訪問介護員（ヘルパー）</span>
-//             <Text>
-//               身体のケアだけでなく、心の支えにもなれるよう努めています。小さな変化にも気を配りながら、笑顔と思いやりを大切に、安心できる時間を提供します。
-//             </Text>
-//           </Content>
-//         </Item>
-//       </List>
-//     </Container>
-//   );
-// };
-
 import React from "react";
 import styled from "styled-components";
 import { Heading } from "../../Heading";
@@ -141,6 +31,10 @@ const Item = styled.li`
   @media (max-width: ${breakpoints.sp}) {
     flex-wrap: wrap;
     justify-content: center;
+
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
   }
 `;
 
@@ -149,6 +43,7 @@ const Content = styled.div`
   padding: 20px;
   background: #e0f7fa;
   border-radius: 20px 0 0 20px;
+  box-sizing: border-box;
 
   &:nth-child(even) {
     background: #e0f7fa;
@@ -159,17 +54,59 @@ const Content = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+
+    &:nth-child(even) {
+      background: #e0f7fa;
+      border-radius: 0 0 20px 20px;
+    }
+  }
+`;
+
+const ImageArea = styled.div`
+  position: relative;
+  width: 50%;
+
+  @media (max-width: ${breakpoints.sp}) {
+    width: 100%;
+    line-height: 0;
   }
 `;
 
 const Image = styled.img`
-  width: 50%;
+  width: 100%;
   height: 350px;
   object-fit: cover;
 `;
+
 const Name = styled.h3`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 12px;
+
+  @media (max-width: ${breakpoints.sp}) {
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 1;
+  }
+`;
+
+const SmallText = styled.span`
+  font-weight: normal;
+  font-size: 14px;
+  margin-left: 8px;
+`;
+
+const Title = styled.h3`
   margin: 0;
   margin-bottom: 8px;
+  font-size: 20px;
 
   @media (max-width: ${breakpoints.sp}) {
     width: 100%;
@@ -180,6 +117,7 @@ const Name = styled.h3`
 
 const Text = styled.p`
   margin-bottom: 0;
+  line-height: 1.7;
 `;
 
 export const Staff = () => {
@@ -189,32 +127,51 @@ export const Staff = () => {
 
       <List>
         <Item>
-          <Image src={staff1} alt="" />
+          <ImageArea>
+            <Image src={staff1} alt="" />
+            <Name>
+              山田花子<SmallText>代表・管理者</SmallText>
+            </Name>
+          </ImageArea>
+
           <Content>
-            <Name>山田花子</Name>
-            <span>代表・管理者</span>
+            <Title>「地域に根ざし、信頼される介護を」</Title>
             <Text>
-              利用者様が安心して暮らせるよう、一人ひとりの想いに寄り添い、心のこもった介護を提供します。地域に根ざした温かいサービスを目指しています。
+              利用者様が安心して暮らせるよう、一人ひとりの想いに寄り添い、心のこもった介護を提供することを大切にしています。
+              私たちは、ただ支援を行うのではなく、信頼できる存在として寄り添い、利用者様やご家族の不安を和らげることを目指しています。
+              地域に根ざした温かいサービスを提供し、住み慣れた場所で安心して暮らし続けられるよう支援してまいります。
             </Text>
           </Content>
         </Item>
         <Item>
           <Content>
-            <Name>山田太郎</Name>
-            <span>サービス提供責任者</span>
+            <Title>「利用者様に寄り添う、最適なケアを」</Title>
             <Text>
-              ご利用者様とご家族が笑顔で過ごせるよう、きめ細やかなサポートを心がけています。日々の暮らしに寄り添い、安心と信頼を大切にしたケアを提供いたします。
+              利用者様一人ひとりに合った最適なケアを提供するため、日々の体調や気持ちの変化に細かく目を配ることを大切にしています。
+              スタッフ同士がしっかり連携を取りながら、質の高い介護サービスを提供し、
+              利用者様やご家族が安心できる環境を整えていきます。これからも、より良い介護を目指し、誠実に取り組んでまいります。
             </Text>
           </Content>
-          <Image src={staff2} alt="" />
+          <ImageArea>
+            <Image src={staff2} alt="" />
+            <Name>
+              山田太郎<SmallText>サービス提供責任者</SmallText>
+            </Name>
+          </ImageArea>
         </Item>
         <Item>
-          <Image src={staff3} alt="" />
+          <ImageArea>
+            <Image src={staff3} alt="" />
+            <Name>
+              鈴木 花子<SmallText>訪問介護員（ヘルパー）</SmallText>
+            </Name>
+          </ImageArea>
           <Content>
-            <Name>鈴木 花子</Name>
-            <span>訪問介護員（ヘルパー）</span>
+            <Title>「笑顔あふれる日常を支えるお手伝い」</Title>
             <Text>
-              身体のケアだけでなく、心の支えにもなれるよう努めています。小さな変化にも気を配りながら、笑顔と思いやりを大切に、安心できる時間を提供します。
+              利用者様の生活を支えるだけでなく、「また来てほしい」と思っていただけるような温かい時間を提供したいと考えています。
+              日々の介護の中で、心を通わせることを大切にし、ちょっとした会話や気配りで利用者様が笑顔になれるよう努めています。
+              日常の小さな幸せを増やしながら、安心できる暮らしを支えていきます。
             </Text>
           </Content>
         </Item>

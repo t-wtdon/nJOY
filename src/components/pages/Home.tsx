@@ -6,6 +6,7 @@ import { Staff } from "../common/pages/Home/Staff";
 import { Features } from "../common/pages/Home/Features";
 import { Voice } from "../common/pages/Home/Voice";
 import { Access } from "../common/pages/Home/Access";
+import { SlideShow } from "../common/pages/Home/Slideshow";
 import { Contact } from "../common/pages/Home/Contact";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
@@ -19,7 +20,7 @@ const ContentInner = styled.div`
 
   @media (max-width: ${breakpoints.sp}) {
     padding: 0 12px;
-    margin: 0 0 80px;
+    margin: 0 auto 80px;
   }
 `;
 
@@ -29,12 +30,14 @@ export const Home = () => {
       <Mv />
       <ContentInner>
         <About />
+        <SlideShow />
         <Features />
         <Staff />
         <Area />
         <Voice />
         <Access />
       </ContentInner>
+      <SlideShow />
       <Contact />
     </div>
   );
