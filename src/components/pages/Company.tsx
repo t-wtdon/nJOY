@@ -22,8 +22,10 @@ export const Company = () => {
   `;
 
   const Table = styled.table`
+    display: block;
     width: 100%;
     max-width: 1080px;
+    padding: 0 15px;
     margin: 0 auto;
     border-collapse: collapse;
   `;
@@ -38,12 +40,20 @@ export const Company = () => {
   `;
   const Head = styled.th`
     padding: 12px;
-    width: 200px;
+    width: 130px;
     background: #f7f7f7;
+
+    @media (max-width: ${breakpoints.sp}) {
+      font-size: 14px;
+    }
   `;
   const Data = styled.td`
     padding: 12px;
     letter-spacing: 0.06em;
+
+    @media (max-width: ${breakpoints.sp}) {
+      font-size: 14px;
+    }
   `;
 
   const SmallText = styled.span`
