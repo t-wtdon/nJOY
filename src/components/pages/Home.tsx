@@ -7,9 +7,10 @@ import { Features } from "../common/pages/Home/Features";
 import { Voice } from "../common/pages/Home/Voice";
 import { Access } from "../common/pages/Home/Access";
 import { SlideShow } from "../common/pages/Home/Slideshow";
-import { Contact } from "../common/pages/Home/Contact";
+import { Info } from "../common/pages/Home/ Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
+import { ScrollToTop } from "../common/ScrollToTop";
 
 const ContentInner = styled.div`
   width: 100%;
@@ -27,6 +28,7 @@ const ContentInner = styled.div`
 export const Home = () => {
   return (
     <div>
+      <ScrollToTop />
       <Mv />
       <ContentInner>
         <About />
@@ -38,7 +40,7 @@ export const Home = () => {
         <Access />
       </ContentInner>
       <SlideShow />
-      <Contact />
+      <Info />
     </div>
   );
 };

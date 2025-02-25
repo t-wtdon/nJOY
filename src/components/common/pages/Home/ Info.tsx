@@ -53,7 +53,7 @@ const SmallText = styled.p`
   font-weight: normal;
 `;
 
-export const Contact = () => {
+export const Info = () => {
   return (
     <Container bgImage={bg}>
       <ContentWrapper>

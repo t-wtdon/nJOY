@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const Footer = styled.footer`
@@ -14,16 +15,23 @@ export const Footer = () => {
     justify-content: space-between;
   `;
 
-  const Name = styled.p`
-    margin: 0 0 20px;
+  const Name = styled(Link)`
     font-size: 20px;
     font-weight: bold;
+
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: #333;
+      cursor: pointer;
+    }
   `;
 
   const List = styled.ul`
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-top: 20px;
     width: 50%;
   `;
 
@@ -31,7 +39,7 @@ export const Footer = () => {
     margin-bottom: 12px;
   `;
 
-  const LinkItem = styled.a`
+  const LinkItem = styled(Link)`
     cursor: pointer !important;
 
     &:link,
@@ -59,11 +67,11 @@ export const Footer = () => {
   return (
     <Footer>
       <Inner>
-        <Name>株式会社nJOY</Name>
+        <Name to="/">株式会社nJOY</Name>
 
         <List>
           <Item>
-            <LinkItem href="./">お問い合わせ</LinkItem>
+            <LinkItem to="/company">会社概要</LinkItem>
           </Item>
           {/* <Item>
             <LinkItem href="./">特徴</LinkItem>

@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { DefaultLayout } from "./components/layouts/DefaultLayout";
 import { Home } from "./components/pages/Home";
-import { About } from "./components/pages/About";
+import { Company } from "./components/pages/Company";
 
 export const App = () => {
   return (
@@ -16,10 +16,10 @@ export const App = () => {
         }
       />
       <Route
-        path="/about"
+        path="/company"
         element={
           <DefaultLayout>
-            <About />
+            <Company />
           </DefaultLayout>
         }
       />
