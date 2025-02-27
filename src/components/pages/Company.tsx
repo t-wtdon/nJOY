@@ -102,7 +102,7 @@ export const Company = () => {
         </Row>
         <Row>
           <Head>事業内容</Head>
-          <Data>介護</Data>
+          <Data>訪問看護事業</Data>
         </Row>
         <Row>
           <Head>従業員数</Head>
