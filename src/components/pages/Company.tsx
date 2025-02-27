@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
 import { SlideShow } from "../common/pages/Home/Slideshow";
 import { breakpoints } from "../../styles/breakpoints";
@@ -61,7 +62,19 @@ export const Company = () => {
   `;
 
   return (
-    <div>
+    <>
+      <Helmet>
+        <title>会社概要 | 株式会社nJOY</title>
+        <meta
+          name="description"
+          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+        />
+        <meta
+          name="keywords"
+          content="会社概要, nJOY, 株式会社nJOY, 企業情報, 代表挨拶, 企業理念, 事業内容"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <ScrollToTop />
       <PageHeading title="会社概要" type="company" />
 
@@ -108,6 +121,6 @@ export const Company = () => {
       </ContentInner>
       <SlideShow />
       <Info />
-    </div>
+    </>
   );
 };
