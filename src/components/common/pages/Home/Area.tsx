@@ -15,7 +15,7 @@ const Box = styled.div`
   width: 100%;
   padding: 20px;
   margin: 0 auto;
-  background: #cae2e6;
+  background: #fef3d3;
   box-sizing: border-box;
 `;
 
