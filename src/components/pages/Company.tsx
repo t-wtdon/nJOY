@@ -74,6 +74,20 @@ export const Company = () => {
           content="会社概要, nJOY, 株式会社nJOY, 企業情報, 代表挨拶, 企業理念, 事業内容"
         />
         <meta name="robots" content="index, follow" />
+
+        {/* OGP */}
+        <meta property="og:title" content="会社概要 | 株式会社nJOY" />
+        <meta
+          property="og:description"
+          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://あなたのサイトのURL/" />
+        <meta
+          property="og:image"
+          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+        />
+        <meta property="og:site_name" content="株式会社nJOY" />
       </Helmet>
       <ScrollToTop />
       <PageHeading title="会社概要" type="company" />
