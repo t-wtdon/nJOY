@@ -88,6 +88,18 @@ export const Company = () => {
           content="https://あなたのサイトのURL/assets/images/ogp.jpg"
         />
         <meta property="og:site_name" content="株式会社nJOY" />
+
+        {/* Twitterカード */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="会社概要 | 株式会社nJOY" />
+        <meta
+          name="twitter:description"
+          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+        />
+        <meta
+          name="twitter:image"
+          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+        />
       </Helmet>
       <ScrollToTop />
       <PageHeading title="会社概要" type="company" />

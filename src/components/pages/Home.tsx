@@ -57,6 +57,21 @@ export const Home = () => {
           content="https://あなたのサイトのURL/assets/images/ogp.jpg"
         />
         <meta property="og:site_name" content="株式会社nJOY" />
+
+        {/* Twitterカード */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="【公式】株式会社nJOY | 株式会社nJOY"
+        />
+        <meta
+          name="twitter:description"
+          content="株式会社nJOYは、訪問介護・福祉サービスを提供する企業です。安心と信頼の介護をお届けします。"
+        />
+        <meta
+          name="twitter:image"
+          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+        />
       </Helmet>
       <ScrollToTop />
       <Mv />
