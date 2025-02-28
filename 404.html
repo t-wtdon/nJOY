@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      var path = window.location.pathname.replace(/^\/nJOY/, ""); // `nJOY` のベースパスを削除
-      window.location.replace("/nJOY" + path); // `/nJOY` をつけてリダイレクト
+      // 現在のURLのパスを取得
+      var path = window.location.pathname;
+
+      // すでに '/nJOY' がプレフィックスとして付いている場合はリダイレクトしない
+      if (!path.startsWith("/nJOY")) {
+        // ベースパス '/nJOY' を付けてリダイレクト
+        window.location.replace("/nJOY" + path);
+      }
     </script>
   </head>
   <body></body>
