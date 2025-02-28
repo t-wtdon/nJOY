@@ -27,6 +27,8 @@ const ContentInner = styled.div`
 `;
 
 export const Home = () => {
+  console.log(1);
+
   return (
     <>
       <Helmet>
