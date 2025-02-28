@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <meta charset="UTF-8" />
     <meta http-equiv="refresh" content="0; url=/nJOY/" />
+    <script>
+      var path = window.location.pathname.replace(/^\/nJOY/, ""); // `nJOY` のベースパスを削除
+      window.location.replace("/nJOY" + path); // `/nJOY` をつけてリダイレクト
+    </script>
   </head>
   <body></body>
 </html>
