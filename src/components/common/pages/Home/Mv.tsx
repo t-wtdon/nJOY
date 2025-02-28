@@ -49,7 +49,7 @@ export const Mv = () => {
     <MainVisualWrap>
       <Box>
         <Title>
-          家族のように
+          家族のようにみんなのために
           <br />
           寄り添う介護を。
         </Title>
