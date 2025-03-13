@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHouseChimneyMedical,
-  faUserNurse,
-  faMapMarkedAlt,
+  faHome,
+  faHeartbeat,
+  faStethoscope,
+  faUserMd,
 } from "@fortawesome/free-solid-svg-icons";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
@@ -24,13 +25,21 @@ const H3heading = styled.h3`
 const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 62px 0 0;
+
+  @media (max-width: ${breakpoints.sp}) {
+    gap: 32px 24px;
+  }
 `;
+
 const Item = styled.li`
-  width: calc((100% - 48px) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 12px);
 
   @media (max-width: ${breakpoints.tablet}) {
     width: calc(50% - 12px);
@@ -66,47 +75,141 @@ const Text = styled.p`
   margin-bottom: 0;
 `;
 
+const FeatureList = styled.ul`
+  margin: 20px 0 0;
+  background: #daeff2;
+  padding: 12px;
+  padding-left: 24px;
+  list-style-type: auto;
+  min-height: 200px;
+  box-sizing: border-box;
+`;
+
+const FeatureItem = styled.li`
+  margin: 4px;
+  font-size: 15px;
+`;
+
+const StrongText = styled.span`
+  font-weight: bold;
+`;
+
 export const Features = () => {
   return (
     <Container>
-      <Heading title="訪問介護の特徴" />
+      <Heading title="私たちの提供するサービス" />
 
       <List>
         <Item>
-          <IconBlock>
-            <IconArea>
-              <Icon icon={faHouseChimneyMedical} />
-            </IconArea>
-          </IconBlock>
-          <H3heading>ご自宅で安心のサポート</H3heading>
-          <Text>
-            住み慣れたご自宅で安心して過ごせるよう、利用者様の生活スタイルに合わせたサポートを行います。
-            身体介護や生活援助を通じて、毎日の暮らしをより快適にするお手伝いをします。
-          </Text>
+          <div>
+            <IconBlock>
+              <IconArea>
+                <Icon icon={faHeartbeat} />
+              </IconArea>
+            </IconBlock>
+            <H3heading>健康な体づくりサポート</H3heading>
+            <Text>
+              私たちは、地域の健康を支えるために、個人や団体向けに健康づくりをサポートします。
+            </Text>
+          </div>
+          <FeatureList>
+            <FeatureItem>
+              <StrongText>健康相談</StrongText>:
+              体調管理や生活習慣に関するアドバイス
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>食事指導/運動サポート</StrongText>:
+              健康なライフスタイルを実現するためのサポート
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>コラボレーション</StrongText>:
+              医療機関、企業、地域団体と連携し、その時に看護師がいる事で、障害や病気のある方でも参加できるような環境をつくる
+            </FeatureItem>
+          </FeatureList>
         </Item>
         <Item>
-          <IconBlock>
-            <IconArea>
-              <Icon icon={faUserNurse} />
-            </IconArea>
-          </IconBlock>
-          <H3heading>経験豊富なスタッフによる質の高い介護</H3heading>
-          <Text>
-            経験と資格を持つスタッフが、利用者様一人ひとりに寄り添いながら、丁寧なケアを提供します。
-            研修を定期的に実施し、常に質の高いサービスを心がけています。
-          </Text>
+          <div>
+            <IconBlock>
+              <IconArea>
+                <Icon icon={faStethoscope} />
+              </IconArea>
+            </IconBlock>
+            <H3heading>病気の早期発見・予防活動</H3heading>
+            <Text>病気になる前からしっかり予防し、健康を守ります。</Text>
+          </div>
+
+          <FeatureList>
+            <FeatureItem>
+              <StrongText>健康チェック</StrongText>:
+              血圧、体温、血糖値、心電図などの定期的なチェック
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>健康教育</StrongText>:
+              健康に関する講座やセミナーを開催し、地域の皆さまに予防の重要性を伝える
+            </FeatureItem>
+          </FeatureList>
         </Item>
         <Item>
-          <IconBlock>
-            <IconArea>
-              <Icon icon={faMapMarkedAlt} />
-            </IconArea>
-          </IconBlock>
-          <H3heading>地域密着のきめ細やかなサービス</H3heading>
-          <Text>
-            地域に根ざした訪問介護サービスとして、迅速で柔軟な対応を実現します。
-            ご家族とも密に連携し、安心してご利用いただける環境を整えています。
-          </Text>
+          <div>
+            <IconBlock>
+              <IconArea>
+                <Icon icon={faUserMd} />
+              </IconArea>
+            </IconBlock>
+            <H3heading>専門性を活かした支援</H3heading>
+            <Text>
+              看護師の豊富な知識と技術を活かし、さまざまな分野で支援を行っています。
+            </Text>
+          </div>
+
+          <FeatureList>
+            <FeatureItem>
+              <StrongText>学校向け支援</StrongText>:
+              生徒や教職員の健康管理、感染症予防など
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>企業向けサポート</StrongText>:
+              従業員の健康チェックや健康経営に関するアドバイス
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>施設向け支援</StrongText>:
+              介護施設や福祉施設における健康管理や医療支援
+            </FeatureItem>
+          </FeatureList>
+        </Item>
+        <Item>
+          <div>
+            <IconBlock>
+              <IconArea>
+                <Icon icon={faHome} />
+              </IconArea>
+            </IconBlock>
+            <H3heading>
+              訪問看護（保険診療、自費診療）での病気、障害への支援
+            </H3heading>
+            <Text>
+              ご自宅での看護が必要な方に、訪問看護サービスを提供します。
+            </Text>
+          </div>
+
+          <FeatureList>
+            <FeatureItem>
+              <StrongText>保険診療</StrongText>:
+              医師の指示に基づく治療、リハビリ、医療処置
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>自費診療</StrongText>:
+              自費での生活支援、健康相談、ケアの提供
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>病気・障がいへの支援</StrongText>:
+              高齢者や障がいをお持ちの方への個別対応、精神的支援も含む
+            </FeatureItem>
+            <FeatureItem>
+              <StrongText>訪問看護エリア</StrongText>:
+              ご利用可能な地域について、詳細はお気軽にご相談ください。
+            </FeatureItem>
+          </FeatureList>
         </Item>
       </List>
     </Container>

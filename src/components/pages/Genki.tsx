@@ -1,15 +1,17 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Mv } from "../common/pages/Home/Mv";
-import { About } from "../common/pages/Home/About";
-import { Features } from "../common/pages/Home/Features";
-import { Access } from "../common/pages/Home/Access";
+import { Mv } from "../common/pages/Genki/Mv";
+import { About } from "../common/pages/Genki/About";
 import { SlideShow } from "../common/pages/Home/Slideshow";
+import { Staff } from "../common/pages/Genki/Staff";
+import { Area } from "../common/pages/Genki/Area";
+import { Voice } from "../common/pages/Genki/Voice";
+import { Point } from "../common/pages/Genki/Point";
+import { Access } from "../common/pages/Home/Access";
 import { Info } from "../common/pages/Home/ Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";
-import { Business } from "../common/pages/Home/Business";
 
 const ContentInner = styled.div`
   width: 100%;
@@ -24,7 +26,7 @@ const ContentInner = styled.div`
   }
 `;
 
-export const Home = () => {
+export const Genki = () => {
   return (
     <>
       <Helmet>
@@ -76,8 +78,10 @@ export const Home = () => {
       <ContentInner>
         <About />
         <SlideShow />
-        <Features />
-        <Business />
+        <Point />
+        <Staff />
+        <Area />
+        <Voice />
         <Access />
       </ContentInner>
       <SlideShow />

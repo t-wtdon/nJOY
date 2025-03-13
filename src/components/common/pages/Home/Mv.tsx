@@ -24,6 +24,7 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   width: 40%;
   height: calc(100vh - 70px);
   background: rgba(0, 151, 167, 0.75);
@@ -44,15 +45,23 @@ const Title = styled.h3`
   line-height: 1.6;
 `;
 
+const SubTitle = styled.p`
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+`;
+
 export const Mv = () => {
   return (
     <MainVisualWrap>
       <Box>
         <Title>
-          家族のように
+          看護を楽しむ、
           <br />
-          寄り添う介護を。
+          地域を元気に！
         </Title>
+
+        <SubTitle>~げんきをもらい、元気を届ける その瞬間を一緒に~</SubTitle>
       </Box>
       <MainVisual mvImage={mv} />
     </MainVisualWrap>

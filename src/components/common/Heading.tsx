@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 const HeadArea = styled.div`
   text-align: center;
@@ -13,6 +14,10 @@ const HeadingContent = styled.h2`
   padding-bottom: 4px;
   border-bottom: 2px solid #00d2f2;
   margin: 0;
+
+  @media (max-width: ${breakpoints.sp}) {
+    font-size: 28px;
+  }
 `;
 
 export const Heading = ({ title }: { title: string }) => {

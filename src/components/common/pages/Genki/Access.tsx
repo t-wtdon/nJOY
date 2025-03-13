@@ -61,9 +61,9 @@ export const Access = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
-          <Name>株式会社nJOY</Name>
+          <Name>げんき訪問看護ステーション</Name>
           <Text>
-            <BoldText>住所:</BoldText> 神奈川県川崎市中原区上小田中3-13-13-3
+            <BoldText>住所:</BoldText> 神奈川県川崎市中原区丸子町715-10
           </Text>
           <Text>
             <BoldText>お車の方:</BoldText> ○○インターを出て、約5分
