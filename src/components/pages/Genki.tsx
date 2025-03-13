@@ -75,8 +75,8 @@ export const Genki = () => {
       </Helmet>
       <ScrollToTop />
       <Mv />
+      <About />
       <ContentInner>
-        <About />
         <SlideShow />
         <Point />
         <Staff />
