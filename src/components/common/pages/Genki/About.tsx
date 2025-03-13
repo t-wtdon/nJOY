@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { breakpoints } from "../../../../styles/breakpoints";
 
 const Container = styled.div`
-  padding: 60px 0;
+  padding: 160px 0;
 
   @media (max-width: ${breakpoints.tablet}) {
-    padding: 20px 0;
+    padding: 60px 0;
   }
 `;
 
@@ -16,6 +16,10 @@ const Title = styled.span`
   margin-bottom: 16px;
   font-weight: bold;
   font-size: 32px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 28px;
+  }
 `;
 
 const Text = styled.p`

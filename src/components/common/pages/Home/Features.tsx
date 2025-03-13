@@ -40,6 +40,9 @@ const Item = styled.li`
   flex-direction: column;
   justify-content: space-between;
   width: calc(50% - 12px);
+  padding: 20px;
+  box-sizing: border-box;
+  background: #daeff2;
 
   @media (max-width: ${breakpoints.tablet}) {
     width: calc(50% - 12px);
@@ -62,7 +65,7 @@ const IconArea = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #daeff2;
+  background: #f2f2da;
 `;
 
 const Icon = styled(FontAwesomeIcon)`
@@ -77,7 +80,7 @@ const Text = styled.p`
 
 const FeatureList = styled.ul`
   margin: 20px 0 0;
-  background: #daeff2;
+  background: #fff;
   padding: 12px;
   padding-left: 24px;
   list-style-type: auto;
