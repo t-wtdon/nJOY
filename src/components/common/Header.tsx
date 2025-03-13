@@ -165,6 +165,11 @@ export const Header = () => {
               会社概要
             </MenuLink>
           </MenuItem>
+          <MenuItem>
+            <MenuLink to="/genki-station" onClick={toggleMenu}>
+              げんき訪問看護ステーション
+            </MenuLink>
+          </MenuItem>
         </MenuList>
       </MenuBox>
     </HeaderWrap>

@@ -7,7 +7,7 @@ import { Staff } from "../common/pages/Genki/Staff";
 import { Area } from "../common/pages/Genki/Area";
 import { Voice } from "../common/pages/Genki/Voice";
 import { Point } from "../common/pages/Genki/Point";
-import { Access } from "../common/pages/Home/Access";
+import { Access } from "../common/pages/Genki/Access";
 import { Info } from "../common/pages/Home/ Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";

@@ -73,6 +73,9 @@ export const Footer = () => {
           <Item>
             <LinkItem to="/company">会社概要</LinkItem>
           </Item>
+          <Item>
+            <LinkItem to="/genki-station">げんき訪問看護ステーション</LinkItem>
+          </Item>
           {/* <Item>
             <LinkItem href="./">特徴</LinkItem>
           </Item>

@@ -48,7 +48,7 @@ const Text = styled.p`
 export const Point = () => {
   return (
     <Container>
-      <Heading title="げんき訪問看護が大切にしていること" />
+      <Heading title="大切にしていること" />
 
       <List>
         <Item>

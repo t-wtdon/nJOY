@@ -21,23 +21,19 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  width: calc(50% - 10px);
+  width: 100%;
   text-align: center;
-
-  @media (max-width: ${breakpoints.sp}) {
-    width: 100%;
-  }
 `;
 
 const Name = styled.h4`
   margin: 20px 0;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 `;
 
 const Text = styled.p`
   margin: 8px 0;
-  text-align: left;
+  text-align: center;
 `;
 
 const BoldText = styled.span`
