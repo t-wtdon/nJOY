@@ -57,30 +57,37 @@ const Name = styled.p`
   right: 0;
   display: flex;
   align-items: center;
-  font-size: 60px;
-  font-weight: bold;
+  max-width: 80%;
   padding: 12px 40px;
   background: #fff;
 
-  @media (max-width: ${breakpoints.tablet}) {
-    font-size: 40px;
-  }
-
   @media (max-width: ${breakpoints.sp}) {
-    font-size: 22px;
+    padding: 12px;
   }
 `;
 
 const Image = styled.img`
-  width: 100px;
+  max-width: 100px;
   height: 100px;
+  margin-right: 20px;
   object-fit: contain;
+
+  @media (max-width: ${breakpoints.sp}) {
+    max-width: calc(50% - 6px);
+    height: 50px;
+  }
 `;
 
 const TitleImage = styled.img`
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: 100px;
   object-fit: contain;
+
+  @media (max-width: ${breakpoints.sp}) {
+    max-width: calc(50% - 6px);
+    height: auto;
+  }
 `;
 
 export const Mv = () => {
