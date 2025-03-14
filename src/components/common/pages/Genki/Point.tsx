@@ -29,7 +29,6 @@ const List = styled.ul`
 
 const Item = styled.li`
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   width: calc((100% - 48px) / 3);
   margin: 20px 0;

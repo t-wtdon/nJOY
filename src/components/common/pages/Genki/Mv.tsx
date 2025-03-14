@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { breakpoints } from "../../../../styles/breakpoints";
 
 const mv = require("../../../../assets/images/genki/mv.jpg");
+const logo = require("../../../../assets/images/genki/genki_logo.png");
+const logo2 = require("../../../../assets/images/genki/genki_logo2.png");
 
 const MainVisualWrap = styled.div`
   position: relative;
@@ -53,6 +55,8 @@ const Name = styled.p`
   position: absolute;
   top: 10%;
   right: 0;
+  display: flex;
+  align-items: center;
   font-size: 60px;
   font-weight: bold;
   padding: 12px 40px;
@@ -67,6 +71,18 @@ const Name = styled.p`
   }
 `;
 
+const Image = styled.img`
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+`;
+
+const TitleImage = styled.img`
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+`;
+
 export const Mv = () => {
   return (
     <MainVisualWrap>
@@ -76,7 +92,10 @@ export const Mv = () => {
         <Title2>あなたがかなえる生活スタイルを</Title2>
       </Title>
 
-      <Name>げんき訪問看護ステーション</Name>
+      <Name>
+        <Image src={logo} alt="" />
+        <TitleImage src={logo2} alt="" />
+      </Name>
       <MainVisual mvImage={mv} />
     </MainVisualWrap>
   );
