@@ -10,7 +10,7 @@ const point4 = require("../../../../assets/images/genki/point4.png");
 const point5 = require("../../../../assets/images/genki/point5.png");
 const point6 = require("../../../../assets/images/genki/point6.png");
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 60px 0;
 
   @media (max-width: ${breakpoints.tablet}) {

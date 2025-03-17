@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeadArea = styled.div<{ bgImgType: string }>`
+const HeadArea = styled.section<{ bgImgType: string }>`
   padding: 80px 15px;
   text-align: center;
   margin-bottom: 40px;

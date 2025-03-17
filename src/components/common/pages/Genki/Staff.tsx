@@ -7,7 +7,7 @@ const staff1 = require("../../../../assets/images/home/staff1.jpg");
 const staff2 = require("../../../../assets/images/home/staff2.jpg");
 const staff3 = require("../../../../assets/images/home/staff3.jpg");
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 60px 0;
 
   @media (max-width: ${breakpoints.tablet}) {
@@ -80,7 +80,7 @@ const Image = styled.img`
   object-fit: cover;
 `;
 
-const Name = styled.h3`
+const Name = styled.p`
   position: absolute;
   bottom: 0;
   right: 0;

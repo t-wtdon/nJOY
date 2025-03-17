@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { breakpoints } from "../../../../styles/breakpoints";
 
 const staff1 = require("../../../../assets/images/slide/slide1.jpg");
 const staff2 = require("../../../../assets/images/slide/slide2.jpg");
@@ -29,7 +28,7 @@ const scrollAnimation = keyframes`
   100% { transform: translateX(-50%); }
 `;
 
-const SliderContainer = styled.div`
+const SliderContainer = styled.section`
   position: relative;
   width: 100vw;
   left: 50%;

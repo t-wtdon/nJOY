@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { breakpoints } from "../../../../styles/breakpoints";
 import { Heading } from "../../Heading";
 
-const Container = styled.div`
+const Container = styled.section`
   position: relative;
   padding: 60px 0;
 `;
@@ -11,7 +11,6 @@ const Container = styled.div`
 const InnerContainer = styled.div`
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 20px;
 `;
 
 const Text = styled.p`

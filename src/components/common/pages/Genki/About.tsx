@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const Container = styled.div`
+const Container = styled.section`
   position: relative;
   padding: 160px 0;
 
@@ -30,7 +30,7 @@ const InnerContainer = styled.div`
   padding: 0 20px;
 `;
 
-const Title = styled.span`
+const Title = styled.h2`
   display: block;
   text-align: center;
   margin-bottom: 16px;
@@ -61,16 +61,18 @@ export const About = () => {
   return (
     <Container>
       <InnerContainer>
+        <Title>げんき訪問看護ステーションの理念</Title>
+
         <Text>
-          <Title>げんき訪問看護ステーションの理念</Title>
           <StrongText>
             「また来てね」と言われる、心に届くケアをモットーに。
           </StrongText>
-          <br />
-          <br />
+        </Text>
+        <Text>
           信頼関係を築く看護を大切に、私たちは住み慣れたご自宅や地域で、
           その人らしく、安心して過ごせるよう支えます。
-          <br />
+        </Text>
+        <Text>
           あなたの「やりたい」「やってみたい」という気持ちを大切にし、
           日々の小さな変化や楽しみを通じて、“元気”をお届けします。
         </Text>

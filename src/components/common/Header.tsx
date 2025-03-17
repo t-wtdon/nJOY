@@ -10,7 +10,13 @@ const HeaderWrap = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  background: #fff;
 `;
 
 const Logo = styled(Link)`

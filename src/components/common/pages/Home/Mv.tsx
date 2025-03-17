@@ -4,7 +4,7 @@ import { breakpoints } from "../../../../styles/breakpoints";
 
 const mv = require("../../../../assets/images/home/mv.jpg");
 
-const MainVisualWrap = styled.div`
+const MainVisualWrap = styled.section`
   position: relative;
   display: flex;
 `;
@@ -36,7 +36,7 @@ const Box = styled.div`
   }
 `;
 
-const Title = styled.h3`
+const Title = styled.h2`
   position: relative;
   font-size: 40px;
   font-weight: bold;

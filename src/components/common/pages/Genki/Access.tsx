@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 60px 0;
 
   @media (max-width: ${breakpoints.tablet}) {
@@ -25,8 +25,9 @@ const Item = styled.li`
   text-align: center;
 `;
 
-const Name = styled.h4`
+const Name = styled.h3`
   margin: 20px 0;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
 `;

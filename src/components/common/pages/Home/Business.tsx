@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const genki = require("../../../../assets/images/home/genki.jpg");
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 60px 0;
 
   @media (max-width: ${breakpoints.tablet}) {

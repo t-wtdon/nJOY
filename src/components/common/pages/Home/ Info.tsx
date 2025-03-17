@@ -5,7 +5,7 @@ import { breakpoints } from "../../../../styles/breakpoints";
 
 const bg = require("../../../../assets/images/home/mv.jpg");
 
-const Container = styled.div<{ bgImage: string }>`
+const Container = styled.section<{ bgImage: string }>`
   position: relative;
   padding: 60px 0;
   background: center center no-repeat url(${(props) => props.bgImage});
@@ -43,7 +43,7 @@ const Box = styled.div`
   }
 `;
 
-const Title = styled.span`
+const Title = styled.h3`
   display: block;
   font-size: 20px;
   margin-bottom: 12px;
@@ -75,8 +75,8 @@ export const Info = () => {
     <Container bgImage={bg}>
       <ContentWrapper>
         <Heading title="お問い合わせ" />
+        <Title>ご相談はいつでもお気軽に</Title>
         <Description>
-          <Title>ご相談はいつでもお気軽に</Title>
           「こんなことお願いしていいの？」 「こんな看護はできるの？」
           どんな小さなことでも、まずはお話を聞かせてください。
         </Description>

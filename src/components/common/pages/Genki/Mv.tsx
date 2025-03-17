@@ -6,7 +6,7 @@ const mv = require("../../../../assets/images/genki/mv.jpg");
 const logo = require("../../../../assets/images/genki/genki_logo.png");
 const logo2 = require("../../../../assets/images/genki/genki_logo2.png");
 
-const MainVisualWrap = styled.div`
+const MainVisualWrap = styled.section`
   position: relative;
   display: flex;
 `;
@@ -51,7 +51,7 @@ const Title2 = styled.span`
   background: #00d2f2;
 `;
 
-const Name = styled.p`
+const Name = styled.h2`
   position: absolute;
   top: 10%;
   right: 0;

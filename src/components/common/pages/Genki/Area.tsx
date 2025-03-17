@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 60px 0;
 
   @media (max-width: ${breakpoints.tablet}) {

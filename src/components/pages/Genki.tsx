@@ -14,6 +14,10 @@ import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";
 
+const Container = styled.main`
+  padding-top: 56px; // header分余白を取ってる
+`;
+
 const ContentInner = styled.div`
   width: 100%;
   max-width: 1080px;
@@ -29,49 +33,49 @@ const ContentInner = styled.div`
 
 export const Genki = () => {
   return (
-    <>
+    <Container>
       <Helmet>
-        <title>【公式】株式会社nJOY | 株式会社nJOY</title>
+        <title>【公式】げんき訪問看護ステーション | 株式会社nJOY</title>
         <meta
           name="description"
-          content="株式会社nJOYは、訪問介護・福祉サービスを提供する企業です。安心と信頼の介護をお届けします。"
+          content="げんき訪問看護ステーションは、訪問看護・医療支援を提供し、あなたの暮らしをサポートします。"
         />
         <meta
           name="keywords"
-          content="訪問介護, 介護サービス, 福祉, nJOY, 株式会社nJOY, 介護施設, 介護支援"
+          content="訪問看護, 医療支援, 介護, 看護サービス, げんき訪問看護ステーション, 株式会社nJOY"
         />
         <meta name="robots" content="index, follow" />
 
         {/* OGP */}
         <meta
           property="og:title"
-          content="【公式】株式会社nJOY | 株式会社nJOY"
+          content="【公式】げんき訪問看護ステーション | 株式会社nJOY"
         />
         <meta
           property="og:description"
-          content="株式会社nJOYは、訪問介護・福祉サービスを提供する企業です。安心と信頼の介護をお届けします。"
+          content="げんき訪問看護ステーションは、訪問看護・医療支援を提供し、あなたの暮らしをサポートします。"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://あなたのサイトのURL/" />
+        <meta property="og:url" content="https://あなたのサイトのURL/genki" />
         <meta
           property="og:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://あなたのサイトのURL/assets/images/genki/ogp.jpg"
         />
-        <meta property="og:site_name" content="株式会社nJOY" />
+        <meta property="og:site_name" content="げんき訪問看護ステーション" />
 
         {/* Twitterカード */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="【公式】株式会社nJOY | 株式会社nJOY"
+          content="【公式】げんき訪問看護ステーション | 株式会社nJOY"
         />
         <meta
           name="twitter:description"
-          content="株式会社nJOYは、訪問介護・福祉サービスを提供する企業です。安心と信頼の介護をお届けします。"
+          content="げんき訪問看護ステーションは、訪問看護・医療支援を提供し、あなたの暮らしをサポートします。"
         />
         <meta
           name="twitter:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://あなたのサイトのURL/assets/images/genki/ogp.jpg"
         />
       </Helmet>
       <ScrollToTop />
@@ -88,6 +92,6 @@ export const Genki = () => {
       </ContentInner>
       <SlideShow />
       <Info />
-    </>
+    </Container>
   );
 };

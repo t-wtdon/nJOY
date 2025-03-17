@@ -11,6 +11,10 @@ import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";
 import { Business } from "../common/pages/Home/Business";
 
+const Container = styled.main`
+  padding-top: 56px; // header分余白を取ってる
+`;
+
 const ContentInner = styled.div`
   width: 100%;
   max-width: 1080px;
@@ -26,7 +30,7 @@ const ContentInner = styled.div`
 
 export const Home = () => {
   return (
-    <>
+    <Container>
       <Helmet>
         <title>【公式】株式会社nJOY | 株式会社nJOY</title>
         <meta
@@ -82,6 +86,6 @@ export const Home = () => {
       </ContentInner>
       <SlideShow />
       <Info />
-    </>
+    </Container>
   );
 };

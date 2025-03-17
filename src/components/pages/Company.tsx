@@ -9,6 +9,10 @@ import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
 export const Company = () => {
+  const Container = styled.main`
+    padding-top: 56px; // header分余白を取ってる
+  `;
+
   const ContentInner = styled.div`
     width: 100%;
     max-width: 1080px;
@@ -62,7 +66,7 @@ export const Company = () => {
   `;
 
   return (
-    <>
+    <Container>
       <Helmet>
         <title>会社概要 | 株式会社nJOY</title>
         <meta
@@ -147,6 +151,6 @@ export const Company = () => {
       </ContentInner>
       <SlideShow />
       <Info />
-    </>
+    </Container>
   );
 };
