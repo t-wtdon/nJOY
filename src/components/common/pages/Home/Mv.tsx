@@ -45,23 +45,15 @@ const Title = styled.h3`
   line-height: 1.6;
 `;
 
-const SubTitle = styled.p`
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 0.03em;
-`;
-
 export const Mv = () => {
   return (
     <MainVisualWrap>
       <Box>
         <Title>
-          看護を楽しむ、
+          看護を楽しみ、
           <br />
           地域を元気に！
         </Title>
-
-        <SubTitle>~げんきをもらい、元気を届ける その瞬間を一緒に~</SubTitle>
       </Box>
       <MainVisual mvImage={mv} />
     </MainVisualWrap>

@@ -53,16 +53,26 @@ const Text = styled.p`
   }
 `;
 
+const StrongText = styled.span`
+  font-weight: bold;
+`;
+
 export const About = () => {
   return (
     <Container>
       <InnerContainer>
         <Text>
           <Title>げんき訪問看護ステーションの理念</Title>
-          あなたに寄り添い、あなたが叶える生活スタイルを
-          私たちは、住み慣れたご自宅や地域で、その人らしく、安心して過ごせるよう支えます。
+          <StrongText>
+            「また来てね」と言われる、心に届くケアをモットーに。
+          </StrongText>
           <br />
-          あなたの「やりたい」「やってみたい」という気持ちを大切にし、ほんの少しの変化と楽しみという“元気”をお届けします。
+          <br />
+          信頼関係を築く看護を大切に、私たちは住み慣れたご自宅や地域で、
+          その人らしく、安心して過ごせるよう支えます。
+          <br />
+          あなたの「やりたい」「やってみたい」という気持ちを大切にし、
+          日々の小さな変化や楽しみを通じて、“元気”をお届けします。
         </Text>
       </InnerContainer>
     </Container>

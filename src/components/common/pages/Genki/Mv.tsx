@@ -94,9 +94,9 @@ export const Mv = () => {
   return (
     <MainVisualWrap>
       <Title>
-        <Title1>あなたに寄り添い、</Title1>
+        <Title1>「また来てね」と言われる、</Title1>
         <br />
-        <Title2>あなたがかなえる生活スタイルを</Title2>
+        <Title2>心に届くケアをモットーに。</Title2>
       </Title>
 
       <Name>

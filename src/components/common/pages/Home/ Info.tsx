@@ -26,6 +26,9 @@ const Container = styled.div<{ bgImage: string }>`
 const ContentWrapper = styled.div`
   position: relative;
   z-index: 1;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
 `;
 
 const Box = styled.div`
@@ -40,12 +43,19 @@ const Box = styled.div`
   }
 `;
 
+const Title = styled.span`
+  display: block;
+  font-size: 20px;
+  margin-bottom: 12px;
+`;
+
 const Text = styled.p`
   color: #000;
   font-size: 20px;
   font-weight: bold;
   word-break: break-all;
 `;
+
 const SmallText = styled.p`
   margin: 0;
   margin-top: 8px;
@@ -53,11 +63,23 @@ const SmallText = styled.p`
   font-weight: normal;
 `;
 
+const Description = styled.p`
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 24px;
+`;
+
 export const Info = () => {
   return (
     <Container bgImage={bg}>
       <ContentWrapper>
         <Heading title="お問い合わせ" />
+        <Description>
+          <Title>ご相談はいつでもお気軽に</Title>
+          「こんなことお願いしていいの？」 「こんな看護はできるの？」
+          どんな小さなことでも、まずはお話を聞かせてください。
+        </Description>
         <Box>
           <Text>
             メールアドレス: Genki.2025.3@gmail.com

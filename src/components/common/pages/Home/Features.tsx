@@ -97,10 +97,16 @@ const StrongText = styled.span`
   font-weight: bold;
 `;
 
+const WarningText = styled.p`
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: -1em;
+`;
+
 export const Features = () => {
   return (
     <Container>
-      <Heading title="私たちの提供するサービス" />
+      <Heading title="nJOYの提供するサービス" />
 
       <List>
         <Item>
@@ -112,21 +118,20 @@ export const Features = () => {
             </IconBlock>
             <H3heading>健康な体づくりサポート</H3heading>
             <Text>
-              私たちは、地域の健康を支えるために、個人や団体向けに健康づくりをサポートします。
+              地域の皆さんが元気で過ごせるよう、個人や団体向けに健康づくりを支援します。
             </Text>
           </div>
           <FeatureList>
             <FeatureItem>
-              <StrongText>健康相談</StrongText>:
-              体調管理や生活習慣に関するアドバイス
+              <StrongText>健康相談</StrongText>: 体調管理や生活習慣のアドバイス
             </FeatureItem>
             <FeatureItem>
-              <StrongText>食事指導/運動サポート</StrongText>:
-              健康なライフスタイルを実現するためのサポート
+              <StrongText>食事・運動サポート</StrongText>:
+              健康的なライフスタイル実現のための支援
             </FeatureItem>
             <FeatureItem>
               <StrongText>コラボレーション</StrongText>:
-              医療機関、企業、地域団体と連携し、その時に看護師がいる事で、障害や病気のある方でも参加できるような環境をつくる
+              医療機関、企業、地域団体と連携し、看護師がいるからこそ参加できる場づくりを行います（障害や病気のある方も安心して参加可能）
             </FeatureItem>
           </FeatureList>
         </Item>
@@ -138,17 +143,17 @@ export const Features = () => {
               </IconArea>
             </IconBlock>
             <H3heading>病気の早期発見・予防活動</H3heading>
-            <Text>病気になる前からしっかり予防し、健康を守ります。</Text>
+            <Text>病気を未然に防ぎ、健康を守るための活動を行います。</Text>
           </div>
 
           <FeatureList>
             <FeatureItem>
               <StrongText>健康チェック</StrongText>:
-              血圧、体温、血糖値、心電図などの定期的なチェック
+              血圧、体温、血糖値、心電図などの定期測定
             </FeatureItem>
             <FeatureItem>
               <StrongText>健康教育</StrongText>:
-              健康に関する講座やセミナーを開催し、地域の皆さまに予防の重要性を伝える
+              病気予防・悪化防止・急変時対応をテーマにした講座やセミナーを開催
             </FeatureItem>
           </FeatureList>
         </Item>
@@ -161,22 +166,22 @@ export const Features = () => {
             </IconBlock>
             <H3heading>専門性を活かした支援</H3heading>
             <Text>
-              看護師の豊富な知識と技術を活かし、さまざまな分野で支援を行っています。
+              看護師の専門知識と技術を活かし、さまざまな分野で支援を行っています。
             </Text>
           </div>
 
           <FeatureList>
             <FeatureItem>
               <StrongText>学校向け支援</StrongText>:
-              生徒や教職員の健康管理、感染症予防など
+              生徒・教職員の健康管理、感染症予防など
             </FeatureItem>
             <FeatureItem>
               <StrongText>企業向けサポート</StrongText>:
-              従業員の健康チェックや健康経営に関するアドバイス
+              従業員の健康チェックや、健康経営に関するアドバイス
             </FeatureItem>
             <FeatureItem>
               <StrongText>施設向け支援</StrongText>:
-              介護施設や福祉施設における健康管理や医療支援
+              介護・福祉施設での健康管理や医療支援
             </FeatureItem>
           </FeatureList>
         </Item>
@@ -187,30 +192,28 @@ export const Features = () => {
                 <Icon icon={faHome} />
               </IconArea>
             </IconBlock>
-            <H3heading>
-              訪問看護（保険診療、自費診療）での病気、障害への支援
-            </H3heading>
+            <H3heading>訪問看護（保険・自費）での病気、障害への支援</H3heading>
             <Text>
-              ご自宅での看護が必要な方に、訪問看護サービスを提供します。
+              ご自宅での看護が必要な方に訪問看護サービスを提供しています。
             </Text>
           </div>
 
           <FeatureList>
             <FeatureItem>
               <StrongText>保険診療</StrongText>:
-              医師の指示に基づく治療、リハビリ、医療処置
+              医師の指示に基づく医療処置、治療、リハビリ
             </FeatureItem>
             <FeatureItem>
               <StrongText>自費診療</StrongText>:
-              自費での生活支援、健康相談、ケアの提供
+              生活支援、健康相談、ケアなど（保険適用外のサービス）
             </FeatureItem>
             <FeatureItem>
-              <StrongText>病気・障がいへの支援</StrongText>:
-              高齢者や障がいをお持ちの方への個別対応、精神的支援も含む
-            </FeatureItem>
-            <FeatureItem>
-              <StrongText>訪問看護エリア</StrongText>:
-              ご利用可能な地域について、詳細はお気軽にご相談ください。
+              <StrongText>病気・障害への支援</StrongText>:
+              一人ひとりに合わせた個別ケアや精神的サポート
+              <br />
+              <WarningText>
+                ※ 訪問看護の対応エリアについては、お気軽にお問い合わせください。
+              </WarningText>
             </FeatureItem>
           </FeatureList>
         </Item>

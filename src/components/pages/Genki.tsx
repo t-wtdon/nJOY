@@ -8,6 +8,7 @@ import { Area } from "../common/pages/Genki/Area";
 import { Voice } from "../common/pages/Genki/Voice";
 import { Point } from "../common/pages/Genki/Point";
 import { Access } from "../common/pages/Genki/Access";
+import { Vision } from "../common/pages/Genki/Vision";
 import { Info } from "../common/pages/Home/ Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
@@ -79,6 +80,7 @@ export const Genki = () => {
       <ContentInner>
         <SlideShow />
         <Point />
+        <Vision />
         <Staff />
         <Area />
         <Voice />
