@@ -114,18 +114,16 @@ export const Company = () => {
           <Data>株式会社nJOY</Data>
         </Row>
         <Row>
-          <Head>代表者</Head>
-          <Data>山田太郎</Data>
+          <Head>取締役</Head>
+          <Data>石井達也</Data>
         </Row>
         <Row>
           <Head>設立年月日</Head>
-          <Data>2025/01/01</Data>
+          <Data>令和6年12月16日</Data>
         </Row>
         <Row>
           <Head>所在地</Head>
           <Data>
-            <SmallText>会社: </SmallText>神奈川県川崎市中原区上小田中3-13-13-3
-            <br />
             <SmallText>げんき訪問看護ステーション: </SmallText>
             神奈川県川崎市中原区丸子町715-10
           </Data>
@@ -136,12 +134,12 @@ export const Company = () => {
         </Row>
         <Row>
           <Head>従業員数</Head>
-          <Data>3人(スタッフ20人)</Data>
+          <Data>3人</Data>
         </Row>
         <Row>
           <Head>連絡先</Head>
           <Data>
-            <SmallText>メール: </SmallText>神奈川県川崎市中原区上小田中3-13-13-3
+            <SmallText>メール: </SmallText>njoy3peace@gmail.com
           </Data>
         </Row>
       </Table>

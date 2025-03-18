@@ -30,7 +30,6 @@ export const Footer = () => {
     padding: 0;
     margin: 0;
     margin-top: 20px;
-    width: 50%;
   `;
 
   const Item = styled.li`
