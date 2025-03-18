@@ -82,7 +82,7 @@ export const Home = () => {
         <SlideShow />
         <Features />
         <Business />
-        <Access />
+        {/* <Access /> */}
       </ContentInner>
       <SlideShow />
       <Info />

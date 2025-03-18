@@ -29,6 +29,10 @@ const ContentWrapper = styled.div`
   max-width: 80%;
   margin: 0 auto;
   text-align: center;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 100%;
+  }
 `;
 
 const Box = styled.div`
@@ -70,16 +74,24 @@ const Description = styled.p`
   margin-bottom: 24px;
 `;
 
+const ContentBox = styled.div`
+  @media (max-width: ${breakpoints.tablet}) {
+    margin: 0 20px;
+  }
+`;
+
 export const Info = () => {
   return (
     <Container bgImage={bg}>
       <ContentWrapper>
         <Heading title="お問い合わせ" />
-        <Title>ご相談はいつでもお気軽に</Title>
-        <Description>
-          「こんなことお願いしていいの？」 「こんな看護はできるの？」
-          どんな小さなことでも、まずはお話を聞かせてください。
-        </Description>
+        <ContentBox>
+          <Title>ご相談はいつでもお気軽に</Title>
+          <Description>
+            「こんなことお願いしていいの？」 「こんな看護はできるの？」
+            どんな小さなことでも、まずはお話を聞かせてください。
+          </Description>
+        </ContentBox>
         <Box>
           <Text>
             メールアドレス: Genki.2025.3@gmail.com

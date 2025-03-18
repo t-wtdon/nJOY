@@ -11,8 +11,6 @@ export const Footer = () => {
     max-width: 1080px;
     margin: 0 auto;
     padding: 80px 20px 20px;
-
-    justify-content: space-between;
   `;
 
   const Name = styled(Link)`
