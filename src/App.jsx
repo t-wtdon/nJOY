@@ -5,6 +5,7 @@ import { DefaultLayout } from "./components/layouts/DefaultLayout";
 import { Home } from "./components/pages/Home";
 import { Company } from "./components/pages/Company";
 import { Genki } from "./components/pages/Genki";
+import { Price } from "./components/pages/Price";
 
 export const App = () => {
   return (
@@ -31,6 +32,14 @@ export const App = () => {
           element={
             <DefaultLayout>
               <Genki />
+            </DefaultLayout>
+          }
+        />
+        <Route
+          path="/genki-station/price"
+          element={
+            <DefaultLayout>
+              <Price />
             </DefaultLayout>
           }
         />

@@ -26,7 +26,7 @@ export const PageHeading = ({
   type,
 }: {
   title: string;
-  type: "company";
+  type: "company" | "price";
 }) => {
   return (
     <HeadArea bgImgType={type}>
