@@ -14,7 +14,7 @@ import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";
 
-const Container = styled.main`
+const Container = styled.section`
   padding-top: 56px; // header分余白を取ってる
 `;
 

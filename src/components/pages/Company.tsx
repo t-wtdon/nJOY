@@ -9,7 +9,7 @@ import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
 export const Company = () => {
-  const Container = styled.main`
+  const Container = styled.section`
     padding-top: 56px; // header分余白を取ってる
   `;
 

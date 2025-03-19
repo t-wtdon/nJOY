@@ -106,7 +106,7 @@ const MenuLink = styled(Link)`
   width: 100%;
   color: #000;
   padding: 10px 0;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
 
@@ -174,6 +174,11 @@ export const Header = () => {
           <MenuItem>
             <MenuLink to="/genki-station" onClick={toggleMenu}>
               げんき訪問看護ステーション
+            </MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink to="/genki-station/price" onClick={toggleMenu}>
+              利用料金(げんき訪問看護ステーション)
             </MenuLink>
           </MenuItem>
         </MenuList>

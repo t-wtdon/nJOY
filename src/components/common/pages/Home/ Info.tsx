@@ -63,7 +63,7 @@ const Text = styled.p`
 const SmallText = styled.p`
   margin: 0;
   margin-top: 8px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
 `;
 
@@ -94,7 +94,7 @@ export const Info = () => {
         </ContentBox>
         <Box>
           <Text>
-            メールアドレス: Genki.2025.3@gmail.com
+            Genki.2025.3@gmail.com
             <SmallText>こちらからお気軽にお問い合わせください</SmallText>
           </Text>
         </Box>

@@ -11,7 +11,7 @@ import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";
 import { Business } from "../common/pages/Home/Business";
 
-const Container = styled.main`
+const Container = styled.section`
   padding-top: 56px; // header分余白を取ってる
 `;
 
