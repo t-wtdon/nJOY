@@ -8,6 +8,8 @@ import { Access } from "../common/pages/Genki/Access";
 import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
+const ceo = require("../../assets/images/company/ceo.jpg");
+
 export const Company = () => {
   const Container = styled.section`
     padding-top: 56px; // header分余白を取ってる
@@ -65,6 +67,58 @@ export const Company = () => {
     font-weight: bold;
   `;
 
+  const Box = styled.div`
+    display: flex;
+    gap: 24px;
+    margin: 40px auto;
+    padding: 0 15px;
+    max-width: 1080px;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      flex-wrap: wrap;
+    }
+  `;
+
+  const Image = styled.img`
+    width: 50%;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 100%;
+    }
+  `;
+
+  const Contents = styled.div`
+    width: calc(50% - 12px);
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 100%;
+    }
+  `;
+
+  const Position = styled.p`
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      margin-top: 0;
+      text-align: center;
+    }
+  `;
+
+  const Name = styled.span`
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  `;
+
+  const Text = styled.p`
+    font-size: 16px;
+    line-height: 1.6;
+  `;
+
   return (
     <Container>
       <Helmet>
@@ -107,6 +161,29 @@ export const Company = () => {
       </Helmet>
       <ScrollToTop />
       <PageHeading title="会社概要" type="company" />
+
+      <Box>
+        <Image src={ceo} alt="" />
+        <Contents>
+          <Position>
+            代表取締役
+            <Name>石井達也</Name>
+          </Position>
+          <Text>
+            私たちの訪問看護サービスは、患者様一人ひとりに寄り添い、安心できる医療を提供することを使命としています。
+            家族のように温かい支援を通じて、心身のケアを行い、より良い生活環境を提供することを目指しています。
+            <br />
+            <br />
+            今後も、専門的な知識と高い技術を持ったスタッフが連携し、
+            皆様がより充実した日々を送れるようにサポートを続けてまいります。
+            <br />
+            <br />
+            社員一同、常に患者様とそのご家族の幸せを第一に考え、信頼されるサービスの提供に尽力していきます。
+            <br />
+            どんな状況においても「安心」をお届けできるよう、今後も成長し続けていきます。
+          </Text>
+        </Contents>
+      </Box>
 
       <Table>
         <Row>

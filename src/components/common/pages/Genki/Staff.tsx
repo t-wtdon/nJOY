@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const staff1 = require("../../../../assets/images/home/staff1.jpg");
-const staff2 = require("../../../../assets/images/home/staff2.jpg");
-const staff3 = require("../../../../assets/images/home/staff3.jpg");
+const staff1 = require("../../../../assets/images/genki/staff1.jpg");
+const staff2 = require("../../../../assets/images/genki/staff2.jpg");
+const staff3 = require("../../../../assets/images/genki/staff3.jpg");
 
 const Container = styled.section`
   padding: 60px 0;

@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { Mv } from "../common/pages/Home/Mv";
 import { About } from "../common/pages/Home/About";
 import { Features } from "../common/pages/Home/Features";
-import { Access } from "../common/pages/Home/Access";
 import { SlideShow } from "../common/pages/Home/Slideshow";
 import { Info } from "../common/pages/Home/ Info";
 import styled from "styled-components";
@@ -82,7 +81,6 @@ export const Home = () => {
         <SlideShow />
         <Features />
         <Business />
-        {/* <Access /> */}
       </ContentInner>
       <SlideShow />
       <Info />
