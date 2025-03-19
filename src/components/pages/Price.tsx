@@ -66,12 +66,50 @@ export const Price = () => {
     padding: 12px;
     text-align: center;
     color: #007a99;
+    box-sizing: border-box;
+
+    @media (max-width: ${breakpoints.sp}) {
+      font-size: 14px;
+    }
   `;
 
   const Data = styled.td`
     padding: 12px;
     text-align: center;
     border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+
+    @media (max-width: ${breakpoints.sp}) {
+      font-size: 14px;
+    }
+  `;
+
+  const TimeHead = styled.th`
+    padding: 12px;
+    color: #007a99;
+    box-sizing: border-box;
+
+    @media (max-width: ${breakpoints.sp}) {
+      font-size: 14px;
+      width: 100px;
+    }
+  `;
+
+  const TimeData = styled.td`
+    text-align: center;
+    box-sizing: border-box;
+
+    @media (max-width: ${breakpoints.sp}) {
+      font-size: 14px;
+      width: 100px;
+    }
+  `;
+
+  const Item = styled.li`
+    @media (max-width: ${breakpoints.sp}) {
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
   `;
 
   return (
@@ -127,14 +165,14 @@ export const Price = () => {
         <Table>
           <THead>
             <Row>
-              <Head>訪問時間</Head>
+              <TimeHead>訪問時間</TimeHead>
               <Head>単位数</Head>
               <Head>負担額</Head>
             </Row>
           </THead>
           <TBody>
             <Row>
-              <Data>20分未満</Data>
+              <TimeData>20分未満</TimeData>
               <Data>314単位</Data>
               <Data>
                 1割負担: 350円
@@ -145,7 +183,7 @@ export const Price = () => {
               </Data>
             </Row>
             <Row>
-              <Data>30分未満</Data>
+              <TimeData>30分未満</TimeData>
               <Data>471単位</Data>
               <Data>
                 1割負担: 531円
@@ -156,7 +194,7 @@ export const Price = () => {
               </Data>
             </Row>
             <Row>
-              <Data>30分以上60分未満</Data>
+              <TimeData>30分以上60分未満</TimeData>
               <Data>846単位</Data>
               <Data>
                 1割負担: 950円
@@ -167,7 +205,7 @@ export const Price = () => {
               </Data>
             </Row>
             <Row>
-              <Data>60分以上90分未満</Data>
+              <TimeData>60分以上90分未満</TimeData>
               <Data>1,170単位</Data>
               <Data>
                 1割負担: 1,300円
@@ -182,23 +220,23 @@ export const Price = () => {
 
         <h4>加算料金</h4>
         <ul>
-          <li>早朝 (6時〜8時)・夜間 (18時〜22時)は25%増</li>
-          <li>深夜 (22時〜6時)は50%増</li>
-          <li>緊急訪問加算(月1回): 668円〜2,002円</li>
-          <li>
+          <Item>早朝 (6時〜8時)・夜間 (18時〜22時)は25%増</Item>
+          <Item>深夜 (22時〜6時)は50%増</Item>
+          <Item>緊急訪問加算(月1回): 668円〜2,002円</Item>
+          <Item>
             特別管理加算(特定疾患・医療依存度が高い方対象): 500円〜1,500円
-          </li>
-          <li>退院時共同指導加算: 600円〜2,000円</li>
-          <li>ターミナルケア加算(終末期支援) 2,000円</li>
-          <li>看護体制強化加算: 300円〜1,200円</li>
-          <li>24時間対応体制加算: 500円〜1,000円</li>
-          <li>長時間訪問看護加算(90分超の訪問): 1,500円</li>
+          </Item>
+          <Item>退院時共同指導加算: 600円〜2,000円</Item>
+          <Item>ターミナルケア加算(終末期支援) 2,000円</Item>
+          <Item>看護体制強化加算: 300円〜1,200円</Item>
+          <Item>24時間対応体制加算: 500円〜1,000円</Item>
+          <Item>長時間訪問看護加算(90分超の訪問): 1,500円</Item>
         </ul>
 
         <h4>交通費</h4>
         <ul>
-          <li>訪問看護における交通費は原則無料</li>
-          <li>車を使用した場合で10km以上の場合: 1,000円</li>
+          <Item>訪問看護における交通費は原則無料</Item>
+          <Item>車を使用した場合で10km以上の場合: 1,000円</Item>
         </ul>
       </Contents>
 
@@ -213,14 +251,14 @@ export const Price = () => {
         <Table>
           <THead>
             <Row>
-              <Head>訪問時間</Head>
+              <TimeHead>訪問時間</TimeHead>
               <Head>単位数</Head>
               <Head>負担額</Head>
             </Row>
           </THead>
           <TBody>
             <Row>
-              <Data>20分未満</Data>
+              <TimeData>20分未満</TimeData>
               <Data>314単位</Data>
               <Data>
                 1割負担: 250円
@@ -231,7 +269,7 @@ export const Price = () => {
               </Data>
             </Row>
             <Row>
-              <Data>30分未満</Data>
+              <TimeData>30分未満</TimeData>
               <Data>471単位</Data>
               <Data>
                 1割負担: 375円
@@ -242,7 +280,7 @@ export const Price = () => {
               </Data>
             </Row>
             <Row>
-              <Data>30分以上60分未満</Data>
+              <TimeData>30分以上60分未満</TimeData>
               <Data>846単位</Data>
               <Data>
                 1割負担: 675円
@@ -253,7 +291,7 @@ export const Price = () => {
               </Data>
             </Row>
             <Row>
-              <Data>60分以上90分未満</Data>
+              <TimeData>60分以上90分未満</TimeData>
               <Data>1,170単位</Data>
               <Data>
                 1割負担: 950円
@@ -268,23 +306,23 @@ export const Price = () => {
 
         <h4>加算料金</h4>
         <ul>
-          <li>早朝 (6時〜8時)・夜間 (18時〜22時)は20%増</li>
-          <li>深夜 (22時〜6時)は40%増</li>
-          <li>緊急訪問加算(月1回): 500円〜1,500円</li>
-          <li>
+          <Item>早朝 (6時〜8時)・夜間 (18時〜22時)は20%増</Item>
+          <Item>深夜 (22時〜6時)は40%増</Item>
+          <Item>緊急訪問加算(月1回): 500円〜1,500円</Item>
+          <Item>
             特別管理加算(特定疾患・医療依存度が高い方対象): 300円〜1,000円
-          </li>
-          <li>退院時共同指導加算: 500円〜1,500円</li>
-          <li>ターミナルケア加算(終末期支援) 1,500円</li>
-          <li>看護体制強化加算: 200円〜800円</li>
-          <li>24時間対応体制加算: 400円〜800円</li>
-          <li>長時間訪問看護加算(90分超の訪問): 1,200円</li>
+          </Item>
+          <Item>退院時共同指導加算: 500円〜1,500円</Item>
+          <Item>ターミナルケア加算(終末期支援) 1,500円</Item>
+          <Item>看護体制強化加算: 200円〜800円</Item>
+          <Item>24時間対応体制加算: 400円〜800円</Item>
+          <Item>長時間訪問看護加算(90分超の訪問): 1,200円</Item>
         </ul>
 
         <h4>交通費</h4>
         <ul>
-          <li>訪問看護における交通費は原則無料</li>
-          <li>車を使用した場合で10km以上の場合: 800円</li>
+          <Item>訪問看護における交通費は原則無料</Item>
+          <Item>車を使用した場合で10km以上の場合: 800円</Item>
         </ul>
       </Contents>
       <SlideShow />
