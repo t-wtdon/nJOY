@@ -8,7 +8,8 @@ import { Access } from "../common/pages/Genki/Access";
 import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
-const ceo = require("../../assets/images/company/ceo.png");
+const ceo = require("../../assets/images/company/ceo.jpg");
+// const ceo = require("../../assets/images/company/ceo.png");
 
 export const Company = () => {
   const Container = styled.section`

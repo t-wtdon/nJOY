@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
 import { Link } from "react-router-dom";
 
+const logo = require(`../../assets/images/logo.png`);
+
 const HeaderWrap = styled.header`
   display: flex;
   align-items: center;
@@ -20,39 +22,13 @@ const HeaderWrap = styled.header`
 `;
 
 const Logo = styled(Link)`
-  position: relative;
-  font-size: 14px;
-  font-weight: bold;
-  &:link,
-  &:visited {
-    text-decoration: none;
-    color: #333;
-    cursor: pointer;
-  }
-  &:before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 17px);
-    left: 7px;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #d5f2e8;
-    z-index: -1;
-  }
-  &:after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: calc(50% - 17px);
-    left: -7px;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    background: #d5eef2;
-    z-index: -1;
-  }
+  height: 40px;
+`;
+
+const Image = styled.img`
+  width: 100px;
+  height: 40px;
+  object-fit: contain;
 `;
 
 const Info = styled.div`
@@ -143,7 +119,9 @@ export const Header = () => {
 
   return (
     <HeaderWrap>
-      <Logo to="/">nJOY</Logo>
+      <Logo to="/">
+        <Image src={logo} alt="ロゴ" />
+      </Logo>
       <Info>
         <Text>
           <LinkText href="mailto:sample@gmail.com">

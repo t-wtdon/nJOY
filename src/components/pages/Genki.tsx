@@ -5,7 +5,7 @@ import { About } from "../common/pages/Genki/About";
 import { SlideShow } from "../common/pages/Home/Slideshow";
 import { Staff } from "../common/pages/Genki/Staff";
 import { Area } from "../common/pages/Genki/Area";
-import { Voice } from "../common/pages/Genki/Voice";
+// import { Voice } from "../common/pages/Genki/Voice";
 import { Point } from "../common/pages/Genki/Point";
 import { Access } from "../common/pages/Genki/Access";
 import { Vision } from "../common/pages/Genki/Vision";
@@ -89,7 +89,7 @@ export const Genki = () => {
         <Vision />
         <Staff />
         <Area />
-        <Voice />
+        {/* <Voice /> */}
         <Access />
       </ContentInner>
       <SlideShow />
