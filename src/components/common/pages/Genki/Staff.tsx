@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const staff1 = require("../../../../assets/images/genki/staff1.jpg");
+const staff1 = require("../../../../assets/images/genki/ishii.jpg");
 const staff2 = require("../../../../assets/images/genki/staff2.jpg");
 const staff3 = require("../../../../assets/images/genki/staff3.jpg");
 
@@ -77,6 +77,7 @@ const ImageArea = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
+  max-height: 350px;
   object-fit: cover;
 `;
 
@@ -130,7 +131,7 @@ export const Staff = () => {
           <ImageArea>
             <Image src={staff1} alt="" />
             <Name>
-              山田花子<SmallText>代表・管理者</SmallText>
+              石井達也<SmallText>代表取締役/診療看護師</SmallText>
             </Name>
           </ImageArea>
 
@@ -155,7 +156,7 @@ export const Staff = () => {
           <ImageArea>
             <Image src={staff2} alt="" />
             <Name>
-              山田太郎<SmallText>サービス提供責任者</SmallText>
+              稲田昌汰<SmallText>看護師</SmallText>
             </Name>
           </ImageArea>
         </Item>
@@ -163,7 +164,10 @@ export const Staff = () => {
           <ImageArea>
             <Image src={staff3} alt="" />
             <Name>
-              鈴木 花子<SmallText>訪問介護員（ヘルパー）</SmallText>
+              片山雄介
+              <SmallText>
+                看護師/日本DMAT 特定行為研修修了者（麻酔科パッケージ）
+              </SmallText>
             </Name>
           </ImageArea>
           <Content>

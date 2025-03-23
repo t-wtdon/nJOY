@@ -178,7 +178,7 @@ export const Header = () => {
           </MenuItem>
           <MenuItem>
             <MenuLink to="/genki-station/price" onClick={toggleMenu}>
-              利用料金(げんき訪問看護ステーション)
+              料金案内(げんき訪問看護ステーション)
             </MenuLink>
           </MenuItem>
         </MenuList>

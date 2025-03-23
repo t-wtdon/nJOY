@@ -8,7 +8,7 @@ import { Access } from "../common/pages/Genki/Access";
 import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
-const ceo = require("../../assets/images/company/ceo.jpg");
+const ceo = require("../../assets/images/company/ceo.png");
 
 export const Company = () => {
   const Container = styled.section`
@@ -69,6 +69,7 @@ export const Company = () => {
 
   const Box = styled.div`
     display: flex;
+    align-items: start;
     gap: 24px;
     margin: 40px auto;
     padding: 0 15px;
@@ -83,6 +84,8 @@ export const Company = () => {
 
   const Image = styled.img`
     width: 50%;
+    max-width: 500px;
+    object-fit: cover;
 
     @media (max-width: ${breakpoints.tablet}) {
       width: 100%;
@@ -122,41 +125,48 @@ export const Company = () => {
   return (
     <Container>
       <Helmet>
-        <title>会社概要 | 株式会社nJOY</title>
+        <title>会社概要・代表メッセージ | 株式会社nJOY</title>
+
         <meta
           name="description"
-          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+          content="株式会社nJOYの会社概要・代表メッセージをご紹介。企業理念や事業内容、訪問看護・介護サービスの想いについて詳しくご覧いただけます。"
         />
         <meta
           name="keywords"
-          content="会社概要, nJOY, 株式会社nJOY, 企業情報, 代表挨拶, 企業理念, 事業内容"
+          content="会社概要, 企業情報, 代表メッセージ, 企業理念, 事業内容, 訪問看護, 在宅介護, 株式会社nJOY"
         />
         <meta name="robots" content="index, follow" />
 
-        {/* OGP */}
-        <meta property="og:title" content="会社概要 | 株式会社nJOY" />
+        {/* OGP (Open Graph Protocol) */}
+        <meta
+          property="og:title"
+          content="会社概要・代表メッセージ | 株式会社nJOY"
+        />
         <meta
           property="og:description"
-          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+          content="株式会社nJOYの会社概要・代表メッセージをご紹介。企業理念や事業内容、訪問看護・介護サービスの想いについて詳しくご覧いただけます。"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://あなたのサイトのURL/" />
+        <meta property="og:url" content="https://n-joy.jp/company" />
         <meta
           property="og:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp.jpg"
         />
         <meta property="og:site_name" content="株式会社nJOY" />
 
         {/* Twitterカード */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="会社概要 | 株式会社nJOY" />
+        <meta
+          name="twitter:title"
+          content="会社概要・代表メッセージ | 株式会社nJOY"
+        />
         <meta
           name="twitter:description"
-          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+          content="株式会社nJOYの会社概要・代表メッセージをご紹介。企業理念や事業内容、訪問看護・介護サービスの想いについて詳しくご覧いただけます。"
         />
         <meta
           name="twitter:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp.jpg"
         />
       </Helmet>
       <ScrollToTop />
@@ -170,19 +180,55 @@ export const Company = () => {
             <Name>石井達也</Name>
           </Position>
           <Text>
-            私たちの訪問看護サービスは、患者様一人ひとりに寄り添い、安心できる医療を提供することを使命としています。
-            家族のように温かい支援を通じて、心身のケアを行い、より良い生活環境を提供することを目指しています。
+            はじめまして。株式会社nJOYの石井達也です。
             <br />
             <br />
-            今後も、専門的な知識と高い技術を持ったスタッフが連携し、
-            皆様がより充実した日々を送れるようにサポートを続けてまいります。
+            私はこれまで、病院や在宅医療の現場で、多くの患者さんやご家族と向き合ってきました。
+            その経験の中で、看護の力は「病気になった人を支える」だけでなく、
+            「病気にならないための支え」としても活かせると強く感じるようになりました。
             <br />
             <br />
-            社員一同、常に患者様とそのご家族の幸せを第一に考え、信頼されるサービスの提供に尽力していきます。
+            nJOYの「n」は“看護（Nursing）”を意味し、私たち看護師がこの職業に誇りと喜びを持ち、
+            「看護を楽しみ、地域を元気にする」ことをモットーに掲げています。その想いを形にするため、
+            訪問看護をはじめ、未病への貢献や救急車搬送件数の縮小など、さまざまな業種と協力しながら、
+            新しいカタチの看護を実現し、社会や地域に貢献していきます。その第一歩として、「げんき訪問看護ステーション」を立ち上げました。
             <br />
-            どんな状況においても「安心」をお届けできるよう、今後も成長し続けていきます。
+            <br />
+            私たちは、医療や看護・介護が必要な方だけでなく、地域に暮らすすべての人が「元気で自分らしく生きる」ことを支えたいと考えています。
+            nJOYが、皆さまの安心や笑顔をつくるお手伝いができれば幸いです。
+            <br />
+            <br />
+            元気をもらい、その元気を地域に届ける——
+            <br />
+            <br />
+            そんな未来を、nJOYの仲間とともに創り上げていきます。
+            <br />
+            どうぞよろしくお願いいたします。
           </Text>
         </Contents>
+      </Box>
+
+      <Box>
+        <Text>
+          代表者略歴（石井達也）
+          <br />
+          •
+          2001年（株）オリエンタルランド入社（ディズニーシーでオープニングキャスト）
+          <br />
+          • 2003年 セントケア（株） ホームヘルパー2級取得
+          <br />
+          • 2007年 日本医科大学看護専門学校卒業
+          <br />
+          • 2007年
+          日本医科大学武蔵小杉病院入職（整形病棟・救命救急センターで勤務）
+          <br />
+          • 2016年 医療法人はなまるクリニック（看護師長）
+          <br />
+          • 2020年 国際医療福祉大学大学院修士課程 診療看護師（NP）資格を取得
+          <br />
+          • 2024年（株）nJOY設立
+          <br />• 2025年 げんき訪問看護ステーション設立
+        </Text>
       </Box>
 
       <Table>

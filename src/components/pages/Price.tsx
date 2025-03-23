@@ -115,43 +115,51 @@ export const Price = () => {
   return (
     <Container>
       <Helmet>
-        <title>げんき訪問看護ステーション - 利用料金 | 株式会社nJOY</title>
+        <title>料金案内 | げんき訪問看護ステーション | 株式会社nJOY</title>
+
         <meta
           name="description"
-          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+          content="げんき訪問看護ステーションの料金案内ページです。訪問看護・在宅ケアにかかる料金や加算料金、交通費などの詳細をご覧いただけます。"
         />
         <meta
           name="keywords"
-          content="会社概要, nJOY, 株式会社nJOY, 企業情報, 代表挨拶, 企業理念, 事業内容"
+          content="訪問看護料金, 在宅医療, 介護サービス, 看護料金, げんき訪問看護ステーション, 株式会社nJOY"
         />
         <meta name="robots" content="index, follow" />
 
-        {/* OGP */}
-        <meta property="og:title" content="会社概要 | 株式会社nJOY" />
+        {/* OGP (Open Graph Protocol) */}
+        <meta
+          property="og:title"
+          content="料金案内 | げんき訪問看護ステーション | 株式会社nJOY"
+        />
         <meta
           property="og:description"
-          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+          content="げんき訪問看護ステーションの料金案内ページです。訪問看護・在宅ケアにかかる料金や加算料金、交通費などの詳細をご覧いただけます。"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://あなたのサイトのURL/" />
+        <meta property="og:url" content="https://n-joy.jp/genki/price" />
         <meta
           property="og:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp-genki-price.jpg"
         />
         <meta property="og:site_name" content="株式会社nJOY" />
 
         {/* Twitterカード */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="会社概要 | 株式会社nJOY" />
+        <meta
+          name="twitter:title"
+          content="料金案内 | げんき訪問看護ステーション | 株式会社nJOY"
+        />
         <meta
           name="twitter:description"
-          content="株式会社nJOYの会社概要をご紹介します。企業理念・所在地・代表挨拶など、nJOYの詳細情報をご覧ください。"
+          content="げんき訪問看護ステーションの料金案内ページです。訪問看護・在宅ケアにかかる料金や加算料金、交通費などの詳細をご覧いただけます。"
         />
         <meta
           name="twitter:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp-genki-price.jpg"
         />
       </Helmet>
+
       <ScrollToTop />
       <PageHeading title="利用料金" type="price" />
 

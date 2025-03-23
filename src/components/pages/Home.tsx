@@ -31,31 +31,32 @@ export const Home = () => {
   return (
     <Container>
       <Helmet>
-        <title>【公式】株式会社nJOY | 株式会社nJOY</title>
+        <title>訪問看護・介護サービスなら株式会社nJOY | 安心の在宅ケア</title>
+
         <meta
           name="description"
-          content="株式会社nJOYは、訪問介護・福祉サービスを提供する企業です。安心と信頼の介護をお届けします。"
+          content="株式会社nJOYは訪問看護・介護サービスを提供。専門スタッフがご自宅でのケアを支援し、安心と信頼の在宅医療をお届けします。"
         />
         <meta
           name="keywords"
-          content="訪問介護, 介護サービス, 福祉, nJOY, 株式会社nJOY, 介護施設, 介護支援"
+          content="訪問看護, 在宅介護, 介護サービス, 福祉, nJOY, 株式会社nJOY, 訪問リハビリ, 介護支援"
         />
         <meta name="robots" content="index, follow" />
 
-        {/* OGP */}
+        {/* OGP (Open Graph Protocol) */}
         <meta
           property="og:title"
-          content="【公式】株式会社nJOY | 株式会社nJOY"
+          content="訪問看護・介護サービスなら株式会社nJOY | 安心の在宅ケア"
         />
         <meta
           property="og:description"
-          content="株式会社nJOYは、訪問介護・福祉サービスを提供する企業です。安心と信頼の介護をお届けします。"
+          content="株式会社nJOYは訪問看護・介護サービスを提供。専門スタッフがご自宅でのケアを支援し、安心と信頼の在宅医療をお届けします。"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://あなたのサイトのURL/" />
+        <meta property="og:url" content="https://n-joy.jp/" />
         <meta
           property="og:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp.jpg"
         />
         <meta property="og:site_name" content="株式会社nJOY" />
 
@@ -63,15 +64,15 @@ export const Home = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="【公式】株式会社nJOY | 株式会社nJOY"
+          content="訪問看護・介護サービスなら株式会社nJOY | 安心の在宅ケア"
         />
         <meta
           name="twitter:description"
-          content="株式会社nJOYは、訪問介護・福祉サービスを提供する企業です。安心と信頼の介護をお届けします。"
+          content="株式会社nJOYは訪問看護・介護サービスを提供。専門スタッフがご自宅でのケアを支援し、安心と信頼の在宅医療をお届けします。"
         />
         <meta
           name="twitter:image"
-          content="https://あなたのサイトのURL/assets/images/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp.jpg"
         />
       </Helmet>
       <ScrollToTop />

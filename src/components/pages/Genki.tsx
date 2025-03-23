@@ -35,49 +35,51 @@ export const Genki = () => {
   return (
     <Container>
       <Helmet>
-        <title>【公式】げんき訪問看護ステーション | 株式会社nJOY</title>
+        <title>げんき訪問看護ステーション | 株式会社nJOY</title>
+
         <meta
           name="description"
-          content="げんき訪問看護ステーションは、訪問看護・医療支援を提供し、あなたの暮らしをサポートします。"
+          content="げんき訪問看護ステーションは、株式会社nJOYが提供する訪問看護サービスです。ご自宅での療養をサポートし、安心の医療ケアを提供します。"
         />
         <meta
           name="keywords"
-          content="訪問看護, 医療支援, 介護, 看護サービス, げんき訪問看護ステーション, 株式会社nJOY"
+          content="げんき訪問看護ステーション, 訪問看護, 在宅医療, 介護, 看護サービス, 在宅ケア, 株式会社nJOY"
         />
         <meta name="robots" content="index, follow" />
 
-        {/* OGP */}
+        {/* OGP (Open Graph Protocol) */}
         <meta
           property="og:title"
-          content="【公式】げんき訪問看護ステーション | 株式会社nJOY"
+          content="げんき訪問看護ステーション | 株式会社nJOY"
         />
         <meta
           property="og:description"
-          content="げんき訪問看護ステーションは、訪問看護・医療支援を提供し、あなたの暮らしをサポートします。"
+          content="げんき訪問看護ステーションは、株式会社nJOYが提供する訪問看護サービスです。ご自宅での療養をサポートし、安心の医療ケアを提供します。"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://あなたのサイトのURL/genki" />
+        <meta property="og:url" content="https://n-joy.jp/genki" />
         <meta
           property="og:image"
-          content="https://あなたのサイトのURL/assets/images/genki/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp-genki.jpg"
         />
-        <meta property="og:site_name" content="げんき訪問看護ステーション" />
+        <meta property="og:site_name" content="株式会社nJOY" />
 
         {/* Twitterカード */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="【公式】げんき訪問看護ステーション | 株式会社nJOY"
+          content="げんき訪問看護ステーション | 株式会社nJOY"
         />
         <meta
           name="twitter:description"
-          content="げんき訪問看護ステーションは、訪問看護・医療支援を提供し、あなたの暮らしをサポートします。"
+          content="げんき訪問看護ステーションは、株式会社nJOYが提供する訪問看護サービスです。ご自宅での療養をサポートし、安心の医療ケアを提供します。"
         />
         <meta
           name="twitter:image"
-          content="https://あなたのサイトのURL/assets/images/genki/ogp.jpg"
+          content="https://n-joy.jp/assets/images/ogp-genki.jpg"
         />
       </Helmet>
+
       <ScrollToTop />
       <Mv />
       <About />
