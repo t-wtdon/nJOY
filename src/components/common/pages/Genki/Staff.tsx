@@ -86,6 +86,11 @@ const Name = styled.p`
   bottom: 0;
   right: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 0;
   font-size: 20px;
   background: rgba(255, 255, 255, 0.7);
   padding: 12px;
@@ -102,6 +107,7 @@ const SmallText = styled.span`
   font-weight: normal;
   font-size: 14px;
   margin-left: 8px;
+  line-height: 1.2;
 `;
 
 const Title = styled.h3`
