@@ -102,7 +102,8 @@ export const Company = () => {
   `;
 
   const Position = styled.p`
-    font-size: 15px;
+    margin: 0 0 24px;
+    font-size: 20px;
     font-weight: bold;
     letter-spacing: 0.06em;
 
@@ -114,13 +115,20 @@ export const Company = () => {
 
   const Name = styled.span`
     margin-left: 20px;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
   `;
 
   const Text = styled.p`
     font-size: 16px;
     line-height: 1.6;
+  `;
+
+  const BigTitle = styled.span`
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
   `;
 
   return (
@@ -211,8 +219,7 @@ export const Company = () => {
 
       <Box>
         <Text>
-          代表者略歴（石井達也）
-          <br />
+          <BigTitle>代表者略歴</BigTitle>
           •
           2001年（株）オリエンタルランド入社（ディズニーシーでオープニングキャスト）
           <br />
