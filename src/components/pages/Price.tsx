@@ -330,7 +330,7 @@ export const Price = () => {
         <h4>交通費</h4>
         <ul>
           <Item>訪問看護における交通費は原則無料</Item>
-          <Item>車を使用した場合で10km以上の場合: 800円</Item>
+          <Item>車を使用した場合で10km以上の場合: 1,000円</Item>
         </ul>
       </Contents>
       <SlideShow />
