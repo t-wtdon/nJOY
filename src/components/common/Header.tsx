@@ -123,8 +123,8 @@ export const Header = () => {
       </Logo>
       <Info>
         <Text>
-          <LinkText href="mailto:sample@gmail.com">
-            メールでのお問い合わせはこちら: sample@gmail.com
+          <LinkText href="mailto:Genki.2025.3@gmail.com">
+            メールでのお問い合わせはこちら: Genki.2025.3@gmail.com
           </LinkText>
         </Text>
         <FontAwesomeIcon
