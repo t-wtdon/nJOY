@@ -144,9 +144,9 @@ export const Header = () => {
       </Logo>
       <Info>
         <ContactMenu>
-          <LinkText href="tel:080-3461-4991">
+          <LinkText href="tel:090-8124-6325">
             <SmallIcon icon={faPhone} size="2x" />
-            080-3461-4991
+            090-8124-6325
           </LinkText>
           <LinkText href="mailto:Genki.2025.3@gmail.com">
             <SmallIcon icon={faEnvelope} size="2x" />

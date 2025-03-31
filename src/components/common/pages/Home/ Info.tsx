@@ -117,9 +117,9 @@ export const Info = () => {
         </ContentBox>
         <Box>
           <Text>
-            <LinkText href="tel:080-3461-4991">
+            <LinkText href="tel:090-8124-6325">
               <Icon icon={faPhone} size="2x" />
-              080-3461-4991
+              090-8124-6325
             </LinkText>
           </Text>
           <Text>

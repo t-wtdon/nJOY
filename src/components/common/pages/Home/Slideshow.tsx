@@ -3,7 +3,6 @@ import styled, { keyframes } from "styled-components";
 
 const slide1 = require("../../../../assets/images/slide/slide1.jpg");
 const slide2 = require("../../../../assets/images/slide/slide2.jpg");
-const slide3 = require("../../../../assets/images/slide/slide3.jpg");
 const slide4 = require("../../../../assets/images/slide/slide4.jpg");
 const slide5 = require("../../../../assets/images/slide/slide5.jpg");
 const slide6 = require("../../../../assets/images/slide/slide6.jpg");
@@ -14,14 +13,12 @@ const slide10 = require("../../../../assets/images/slide/slide10.jpg");
 const slide11 = require("../../../../assets/images/slide/slide11.jpg");
 const slide12 = require("../../../../assets/images/slide/slide12.jpg");
 const slide13 = require("../../../../assets/images/slide/slide13.jpg");
-const slide14 = require("../../../../assets/images/slide/slide14.jpg");
 const slide15 = require("../../../../assets/images/slide/slide15.jpg");
 const slide16 = require("../../../../assets/images/slide/slide16.jpg");
 
 const images = [
   slide1,
   slide2,
-  slide3,
   slide4,
   slide5,
   slide6,
@@ -32,7 +29,6 @@ const images = [
   slide11,
   slide12,
   slide13,
-  slide14,
   slide15,
   slide16,
 ];
