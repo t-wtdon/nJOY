@@ -9,7 +9,7 @@ import { ScrollToTop } from "../common/ScrollToTop";
 
 export const Price = () => {
   const Container = styled.section`
-    padding-top: 56px; // header分余白を取ってる
+    padding-top: 70px; // header分余白を取ってる
   `;
 
   const Contents = styled.div`

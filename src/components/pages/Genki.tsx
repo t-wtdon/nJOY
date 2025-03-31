@@ -4,8 +4,6 @@ import { Mv } from "../common/pages/Genki/Mv";
 import { About } from "../common/pages/Genki/About";
 import { SlideShow } from "../common/pages/Home/Slideshow";
 import { Staff } from "../common/pages/Genki/Staff";
-// import { Area } from "../common/pages/Genki/Area";
-// import { Voice } from "../common/pages/Genki/Voice";
 import { Point } from "../common/pages/Genki/Point";
 import { Access } from "../common/pages/Genki/Access";
 import { Vision } from "../common/pages/Genki/Vision";
@@ -15,7 +13,7 @@ import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";
 
 const Container = styled.section`
-  padding-top: 56px; // header分余白を取ってる
+  padding-top: 70px; // header分余白を取ってる
 `;
 
 const ContentInner = styled.div`
@@ -88,8 +86,6 @@ export const Genki = () => {
         <Point />
         <Vision />
         <Staff />
-        {/* <Area /> */}
-        {/* <Voice /> */}
         <Access />
       </ContentInner>
       <SlideShow />

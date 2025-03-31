@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const mv = require("../../../../assets/images/genki/mv.jpg");
+const PCmv = require("../../../../assets/images/genki/mv.jpg");
+const SPmv = require("../../../../assets/images/genki/spMv.jpg");
 const logo = require("../../../../assets/images/genki/genki_logo.png");
 
 const MainVisualWrap = styled.section`
@@ -10,13 +11,31 @@ const MainVisualWrap = styled.section`
   display: flex;
 `;
 
-const MainVisual = styled.div<{ mvImage: string }>`
+const PCMainVisual = styled.div<{ mvImage: string }>`
   width: 100%;
   height: calc(100vh - 70px);
   margin: 0 auto;
   background: no-repeat url(${(props) => props.mvImage});
   background-size: cover;
   background-position: center;
+
+  @media (max-width: ${breakpoints.sp}) {
+    display: none;
+  }
+`;
+
+const SPMainVisual = styled.div<{ mvImage: string }>`
+  display: none;
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin: 0 auto;
+  background: no-repeat url(${(props) => props.mvImage});
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: ${breakpoints.sp}) {
+    display: block;
+  }
 `;
 
 const Title = styled.h3`
@@ -93,7 +112,8 @@ export const Mv = () => {
         <Image src={logo} alt="" />
         <ServiceName>げんき訪問看護ステーション</ServiceName>
       </Name>
-      <MainVisual mvImage={mv} />
+      <PCMainVisual mvImage={PCmv} />
+      <SPMainVisual mvImage={SPmv} />
     </MainVisualWrap>
   );
 };

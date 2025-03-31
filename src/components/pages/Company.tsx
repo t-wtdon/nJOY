@@ -9,11 +9,10 @@ import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
 const ceo = require("../../assets/images/company/ceo.jpg");
-// const ceo = require("../../assets/images/company/ceo.png");
 
 export const Company = () => {
   const Container = styled.section`
-    padding-top: 56px; // header分余白を取ってる
+    padding-top: 70px; // header分余白を取ってる
   `;
 
   const ContentInner = styled.div`
