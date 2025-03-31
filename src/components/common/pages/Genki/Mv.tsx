@@ -30,7 +30,7 @@ const SPMainVisual = styled.div<{ mvImage: string }>`
   margin: 0 auto;
   background: no-repeat url(${(props) => props.mvImage});
   background-size: cover;
-  background-position: center top;
+  background-position: center -20px;
 
   @media (max-width: ${breakpoints.sp}) {
     display: block;
