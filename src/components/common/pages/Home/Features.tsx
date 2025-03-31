@@ -42,7 +42,7 @@ const Item = styled.li`
   width: calc(50% - 12px);
   padding: 20px;
   box-sizing: border-box;
-  background: #daeff2;
+  background: #f2f2da;
 
   @media (max-width: ${breakpoints.tablet}) {
     width: calc(50% - 12px);
@@ -65,11 +65,11 @@ const IconArea = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #f2f2da;
+  background: #daeff2;
 `;
 
 const Icon = styled(FontAwesomeIcon)`
-  color: #00d2f2;
+  color: #ffa500;
   font-size: 48px;
 `;
 

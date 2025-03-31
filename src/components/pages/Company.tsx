@@ -12,7 +12,7 @@ const ceo = require("../../assets/images/company/ceo.jpg");
 
 export const Company = () => {
   const Container = styled.section`
-    padding-top: 70px; // header分余白を取ってる
+    padding-top: 76px; // header分余白を取ってる
   `;
 
   const ContentInner = styled.div`

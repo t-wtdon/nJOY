@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   const Footer = styled.footer`
-    background: #daeff2;
+    background: #fff5e1;
   `;
 
   const Inner = styled.div`

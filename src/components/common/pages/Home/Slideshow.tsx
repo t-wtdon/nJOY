@@ -15,6 +15,8 @@ const slide11 = require("../../../../assets/images/slide/slide11.jpg");
 const slide12 = require("../../../../assets/images/slide/slide12.jpg");
 const slide13 = require("../../../../assets/images/slide/slide13.jpg");
 const slide14 = require("../../../../assets/images/slide/slide14.jpg");
+const slide15 = require("../../../../assets/images/slide/slide15.jpg");
+const slide16 = require("../../../../assets/images/slide/slide16.jpg");
 
 const images = [
   slide1,
@@ -31,6 +33,8 @@ const images = [
   slide12,
   slide13,
   slide14,
+  slide15,
+  slide16,
 ];
 
 const scrollAnimation = keyframes`

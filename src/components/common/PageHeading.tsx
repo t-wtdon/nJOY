@@ -16,7 +16,7 @@ const HeadingContent = styled.h2`
   font-size: 32px;
   font-weight: bold;
   padding-bottom: 4px;
-  border-bottom: 2px solid #00d2f2;
+  border-bottom: 2px solid #ff7f50;
   margin: 0;
   color: white; /* 文字色を白に */
 `;

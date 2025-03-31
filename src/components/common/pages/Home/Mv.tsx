@@ -27,7 +27,7 @@ const Box = styled.div`
   flex-direction: column;
   width: 40%;
   height: calc(100vh - 70px);
-  background: rgba(0, 151, 167, 0.75);
+  background: rgba(255, 152, 0, 0.75);
   color: #fff;
 
   @media (max-width: ${breakpoints.tablet}) {

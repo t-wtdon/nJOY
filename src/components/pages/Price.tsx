@@ -9,7 +9,7 @@ import { ScrollToTop } from "../common/ScrollToTop";
 
 export const Price = () => {
   const Container = styled.section`
-    padding-top: 70px; // header分余白を取ってる
+    padding-top: 76px; // header分余白を取ってる
   `;
 
   const Contents = styled.div`
@@ -25,7 +25,7 @@ export const Price = () => {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    color: #007a99;
+    color: #ff7f50;
     text-align: center;
   `;
 
@@ -53,19 +53,19 @@ export const Price = () => {
   `;
 
   const THead = styled.thead`
-    background: #cceff9;
+    background: #ffa500;
   `;
 
   const TBody = styled.tbody``;
 
   const Row = styled.tr`
-    border-bottom: 1px solid #99e1f5;
+    border-bottom: 1px solid #fff5e1;
   `;
 
   const Head = styled.th`
     padding: 12px;
     text-align: center;
-    color: #007a99;
+    color: #fff;
     box-sizing: border-box;
 
     @media (max-width: ${breakpoints.sp}) {
@@ -86,7 +86,7 @@ export const Price = () => {
 
   const TimeHead = styled.th`
     padding: 12px;
-    color: #007a99;
+    color: #fff;
     box-sizing: border-box;
 
     @media (max-width: ${breakpoints.sp}) {

@@ -60,44 +60,15 @@ const Title = styled.h3`
 
 const Title1 = styled.span`
   display: inline-block;
-  background: #00d2f2;
+  background: #ff7f50;
 `;
 
 const Title2 = styled.span`
   display: inline-block;
   margin-top: 12px;
   margin-left: 10%;
-  background: #00d2f2;
+  background: #ff7f50;
 `;
-
-const Name = styled.h2`
-  position: absolute;
-  top: 30%;
-  right: 0;
-  display: flex;
-  align-items: center;
-  max-width: 80%;
-  padding: 12px 40px;
-  background: #fff;
-  opacity: 0.7;
-
-  @media (max-width: ${breakpoints.sp}) {
-    padding: 12px;
-  }
-`;
-
-const Image = styled.img`
-  max-width: 100px;
-  height: 100px;
-  object-fit: contain;
-
-  @media (max-width: ${breakpoints.sp}) {
-    max-width: calc(50% - 6px);
-    height: 50px;
-  }
-`;
-
-const ServiceName = styled.p``;
 
 export const Mv = () => {
   return (
@@ -108,10 +79,6 @@ export const Mv = () => {
         <Title2>心に届くケアをモットーに。</Title2>
       </Title>
 
-      <Name>
-        <Image src={logo} alt="" />
-        <ServiceName>げんき訪問看護ステーション</ServiceName>
-      </Name>
       <PCMainVisual mvImage={PCmv} />
       <SPMainVisual mvImage={SPmv} />
     </MainVisualWrap>

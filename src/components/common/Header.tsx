@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faPhone,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
 import { Link } from "react-router-dom";
@@ -23,11 +28,11 @@ const HeaderWrap = styled.header`
 
 const Logo = styled(Link)`
   cursor: pointer !important;
-  height: 40px;
+  height: 50px;
 `;
 
 const Image = styled.img`
-  height: 40px;
+  height: 50px;
   object-fit: contain;
 `;
 
@@ -44,7 +49,9 @@ const ContactMenu = styled.div`
 `;
 
 const LinkText = styled.a`
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
 
   &:link {
     color: #000;
@@ -54,10 +61,20 @@ const LinkText = styled.a`
   &:hover {
     text-decoration: underline;
   }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const Icon = styled(FontAwesomeIcon)`
   margin-left: 24px;
+`;
+
+const SmallIcon = styled(FontAwesomeIcon)`
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
 `;
 
 const MenuBox = styled.div<{ isOpen: boolean }>`
@@ -128,10 +145,12 @@ export const Header = () => {
       <Info>
         <ContactMenu>
           <LinkText href="tel:080-3461-4991">
-            電話でのお問い合わせはこちら: 080-3461-4991
+            <SmallIcon icon={faPhone} size="2x" />
+            080-3461-4991
           </LinkText>
           <LinkText href="mailto:Genki.2025.3@gmail.com">
-            メールでのお問い合わせはこちら: Genki.2025.3@gmail.com
+            <SmallIcon icon={faEnvelope} size="2x" />
+            Genki.2025.3@gmail.com
           </LinkText>
         </ContactMenu>
 

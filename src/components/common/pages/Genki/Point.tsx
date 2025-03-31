@@ -64,8 +64,8 @@ const Title = styled.h3`
     bottom: 0;
     left: 0;
     width: 100px;
-    height: 4px;
-    background: #00d2f2;
+    height: 1px;
+    background: #ff7f50;
   }
 `;
 
@@ -83,7 +83,7 @@ export const Point = () => {
       <List>
         <Item>
           <Image src={point1} alt="" />
-          <Title>住み慣れた場所で、安心して暮らせるように</Title>
+          <Title>住み慣れた場所で安心の暮らしを</Title>
           <Text>
             これまでの暮らしや環境を大切にし、
             その人らしく、安心して過ごせるようサポートします。

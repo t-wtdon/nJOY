@@ -11,7 +11,7 @@ import { ScrollToTop } from "../common/ScrollToTop";
 import { Business } from "../common/pages/Home/Business";
 
 const Container = styled.section`
-  padding-top: 70px; // header分余白を取ってる
+  padding-top: 76px; // header分余白を取ってる
 `;
 
 const ContentInner = styled.div`

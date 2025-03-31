@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const staff1 = require("../../../../assets/images/genki/ishii.jpg");
-const staff2 = require("../../../../assets/images/genki/inada.jpg");
-const staff3 = require("../../../../assets/images/genki/katayama.jpg");
-const SPstaff1 = require("../../../../assets/images/genki/mv.jpg");
-const SPstaff2 = require("../../../../assets/images/genki/mv.jpg");
-const SPstaff3 = require("../../../../assets/images/genki/mv.jpg");
+const staff1 = require("../../../../assets/images/genki/ishii-sp.jpg");
+const staff2 = require("../../../../assets/images/genki/inada-sp.jpg");
+const staff3 = require("../../../../assets/images/genki/katayama-sp.jpg");
+const SPstaff1 = require("../../../../assets/images/genki/ishii-sp.jpg");
+const SPstaff2 = require("../../../../assets/images/genki/inada-sp.jpg");
+const SPstaff3 = require("../../../../assets/images/genki/katayama-sp.jpg");
 
 const Container = styled.section`
   padding: 60px 0;
@@ -44,12 +44,12 @@ const Item = styled.li`
 const Content = styled.div`
   width: 50%;
   padding: 20px;
-  background: #e0f7fa;
+  background: #fff5e1;
   border-radius: 20px 0 0 20px;
   box-sizing: border-box;
 
   &:nth-child(even) {
-    background: #e0f7fa;
+    background: #fff5e1;
     border-radius: 0 20px 20px 0;
   }
 
@@ -61,7 +61,7 @@ const Content = styled.div`
     border-radius: 0 0 20px 20px;
 
     &:nth-child(even) {
-      background: #e0f7fa;
+      background: #fff5e1;
       border-radius: 0 0 20px 20px;
     }
   }
