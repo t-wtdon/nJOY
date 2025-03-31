@@ -8,6 +8,7 @@ const point2 = require("../../../../assets/images/genki/point2.png");
 const point3 = require("../../../../assets/images/genki/point3.png");
 const point4 = require("../../../../assets/images/genki/point4.png");
 const point5 = require("../../../../assets/images/genki/point5.png");
+const point5_a = require("../../../../assets/images/genki/point5.jpg");
 const point6 = require("../../../../assets/images/genki/point6.png");
 
 const Container = styled.section`
@@ -115,6 +116,7 @@ export const Point = () => {
         </Item>
         <Item>
           <Image src={point5} alt="" />
+          <Image src={point5_a} alt="" />
           <Title>介護と医療の架け橋に</Title>
           <Text>
             介護や医療には、さまざまな職種の連携が必要です。
