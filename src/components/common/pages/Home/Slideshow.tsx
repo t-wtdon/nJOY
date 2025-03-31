@@ -1,26 +1,36 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-const staff1 = require("../../../../assets/images/slide/slide1.jpg");
-const staff2 = require("../../../../assets/images/slide/slide2.jpg");
-const staff3 = require("../../../../assets/images/slide/slide3.jpg");
-const staff4 = require("../../../../assets/images/slide/slide4.jpg");
-const staff5 = require("../../../../assets/images/slide/slide5.jpg");
-const staff6 = require("../../../../assets/images/slide/slide6.jpg");
-const staff7 = require("../../../../assets/images/slide/slide7.jpg");
-const staff8 = require("../../../../assets/images/slide/slide8.jpg");
-const staff9 = require("../../../../assets/images/slide/slide9.jpg");
+const slide1 = require("../../../../assets/images/slide/slide1.jpg");
+const slide2 = require("../../../../assets/images/slide/slide2.jpg");
+const slide3 = require("../../../../assets/images/slide/slide3.jpg");
+const slide4 = require("../../../../assets/images/slide/slide4.jpg");
+const slide5 = require("../../../../assets/images/slide/slide5.jpg");
+const slide6 = require("../../../../assets/images/slide/slide6.jpg");
+const slide7 = require("../../../../assets/images/slide/slide7.jpg");
+const slide8 = require("../../../../assets/images/slide/slide8.jpg");
+const slide9 = require("../../../../assets/images/slide/slide9.jpg");
+const slide10 = require("../../../../assets/images/slide/slide10.jpg");
+const slide11 = require("../../../../assets/images/slide/slide11.jpg");
+const slide12 = require("../../../../assets/images/slide/slide12.jpg");
+const slide13 = require("../../../../assets/images/slide/slide13.jpg");
+const slide14 = require("../../../../assets/images/slide/slide14.jpg");
 
 const images = [
-  staff1,
-  staff2,
-  staff3,
-  staff4,
-  staff5,
-  staff6,
-  staff7,
-  staff8,
-  staff9,
+  slide1,
+  slide2,
+  slide3,
+  slide4,
+  slide5,
+  slide6,
+  slide7,
+  slide8,
+  slide9,
+  slide10,
+  slide11,
+  slide12,
+  slide13,
+  slide14,
 ];
 
 const scrollAnimation = keyframes`
@@ -39,9 +49,8 @@ const SliderContainer = styled.section`
 
 const SliderTrack = styled.div`
   display: flex;
-  width: calc(2 * 300px * ${images.length}px);
-  object-fit: cover;
-  animation: ${scrollAnimation} 10s linear infinite;
+  width: calc(300px * ${images.length} * 2);
+  animation: ${scrollAnimation} 75s linear infinite;
   object-fit: cover;
 `;
 
@@ -49,6 +58,7 @@ const Slide = styled.img`
   width: 300px;
   height: 200px;
   flex-shrink: 0;
+  object-fit: cover;
 `;
 
 export const SlideShow = () => {

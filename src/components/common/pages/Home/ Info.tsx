@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const bg = require("../../../../assets/images/home/mv.jpg");
 
@@ -54,6 +56,7 @@ const Title = styled.h3`
 `;
 
 const Text = styled.p`
+  margin: 8px 0;
   color: #000;
   font-size: 20px;
   font-weight: bold;
@@ -80,6 +83,26 @@ const ContentBox = styled.div`
   }
 `;
 
+const LinkText = styled.a`
+  cursor: pointer !important;
+
+  &:link,
+  &:visited {
+    color: #333;
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const Icon = styled(FontAwesomeIcon)`
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+`;
+
 export const Info = () => {
   return (
     <Container bgImage={bg}>
@@ -94,7 +117,16 @@ export const Info = () => {
         </ContentBox>
         <Box>
           <Text>
-            Genki.2025.3@gmail.com
+            <LinkText href="tel:080-3461-4991">
+              <Icon icon={faPhone} size="2x" />
+              080-3461-4991
+            </LinkText>
+          </Text>
+          <Text>
+            <LinkText href="mailto:Genki.2025.3@gmail.com">
+              <Icon icon={faEnvelope} size="2x" />
+              Genki.2025.3@gmail.com
+            </LinkText>
             <SmallText>こちらからお気軽にお問い合わせください</SmallText>
           </Text>
         </Box>

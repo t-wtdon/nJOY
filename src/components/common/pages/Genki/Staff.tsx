@@ -6,6 +6,9 @@ import { breakpoints } from "../../../../styles/breakpoints";
 const staff1 = require("../../../../assets/images/genki/ishii.jpg");
 const staff2 = require("../../../../assets/images/genki/inada.jpg");
 const staff3 = require("../../../../assets/images/genki/katayama.jpg");
+const SPstaff1 = require("../../../../assets/images/genki/mv.jpg");
+const SPstaff2 = require("../../../../assets/images/genki/mv.jpg");
+const SPstaff3 = require("../../../../assets/images/genki/mv.jpg");
 
 const Container = styled.section`
   padding: 60px 0;
@@ -74,11 +77,25 @@ const ImageArea = styled.div`
   }
 `;
 
-const Image = styled.img`
+const PCImage = styled.img`
   width: 100%;
   height: 100%;
-  // max-height: 350px;
   object-fit: cover;
+
+  @media (max-width: ${breakpoints.sp}) {
+    display: none;
+  }
+`;
+
+const SPImage = styled.img`
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (max-width: ${breakpoints.sp}) {
+    display: block;
+  }
 `;
 
 const Name = styled.p`
@@ -135,7 +152,8 @@ export const Staff = () => {
       <List>
         <Item>
           <ImageArea>
-            <Image src={staff1} alt="" />
+            <PCImage src={staff1} alt="" />
+            <SPImage src={SPstaff1} alt="" />
             <Name>
               石井達也<SmallText>代表取締役/診療看護師</SmallText>
             </Name>
@@ -204,7 +222,8 @@ export const Staff = () => {
             </Text>
           </Content>
           <ImageArea>
-            <Image src={staff2} alt="" />
+            <PCImage src={staff2} alt="" />
+            <SPImage src={SPstaff2} alt="" />
             <Name>
               稲田昌汰<SmallText>看護師</SmallText>
             </Name>
@@ -212,7 +231,8 @@ export const Staff = () => {
         </Item>
         <Item>
           <ImageArea>
-            <Image src={staff3} alt="" />
+            <PCImage src={staff3} alt="" />
+            <SPImage src={SPstaff3} alt="" />
             <Name>
               片山雄介
               <SmallText>

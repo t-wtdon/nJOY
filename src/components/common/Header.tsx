@@ -22,6 +22,7 @@ const HeaderWrap = styled.header`
 `;
 
 const Logo = styled(Link)`
+  cursor: pointer !important;
   height: 40px;
 `;
 
@@ -32,20 +33,19 @@ const Image = styled.img`
 
 const Info = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 `;
 
-const Text = styled.p`
-  margin: 0;
-  margin-right: 24px;
-  letter-spacing: 0.03em;
-
-  @media (max-width: ${breakpoints.tablet}) {
+const ContactMenu = styled.div`
+  @media (max-width: ${breakpoints.sp}) {
     display: none;
   }
 `;
 
 const LinkText = styled.a`
+  display: block;
+
   &:link {
     color: #000;
     text-decoration: none;
@@ -54,6 +54,10 @@ const LinkText = styled.a`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const Icon = styled(FontAwesomeIcon)`
+  margin-left: 24px;
 `;
 
 const MenuBox = styled.div<{ isOpen: boolean }>`
@@ -122,12 +126,16 @@ export const Header = () => {
         <Image src={logo} alt="ロゴ" />
       </Logo>
       <Info>
-        <Text>
+        <ContactMenu>
+          <LinkText href="tel:080-3461-4991">
+            電話でのお問い合わせはこちら: 080-3461-4991
+          </LinkText>
           <LinkText href="mailto:Genki.2025.3@gmail.com">
             メールでのお問い合わせはこちら: Genki.2025.3@gmail.com
           </LinkText>
-        </Text>
-        <FontAwesomeIcon
+        </ContactMenu>
+
+        <Icon
           icon={faBars}
           size="2x"
           onClick={toggleMenu}

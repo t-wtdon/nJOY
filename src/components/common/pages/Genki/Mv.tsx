@@ -4,7 +4,6 @@ import { breakpoints } from "../../../../styles/breakpoints";
 
 const mv = require("../../../../assets/images/genki/mv.jpg");
 const logo = require("../../../../assets/images/genki/genki_logo.png");
-const logo2 = require("../../../../assets/images/genki/genki_logo2.png");
 
 const MainVisualWrap = styled.section`
   position: relative;
@@ -15,8 +14,9 @@ const MainVisual = styled.div<{ mvImage: string }>`
   width: 100%;
   height: calc(100vh - 70px);
   margin: 0 auto;
-  background: center center no-repeat url(${(props) => props.mvImage});
+  background: no-repeat url(${(props) => props.mvImage});
   background-size: cover;
+  background-position: center;
 `;
 
 const Title = styled.h3`
@@ -53,13 +53,14 @@ const Title2 = styled.span`
 
 const Name = styled.h2`
   position: absolute;
-  top: 10%;
+  top: 30%;
   right: 0;
   display: flex;
   align-items: center;
   max-width: 80%;
   padding: 12px 40px;
   background: #fff;
+  opacity: 0.7;
 
   @media (max-width: ${breakpoints.sp}) {
     padding: 12px;
@@ -69,7 +70,6 @@ const Name = styled.h2`
 const Image = styled.img`
   max-width: 100px;
   height: 100px;
-  margin-right: 20px;
   object-fit: contain;
 
   @media (max-width: ${breakpoints.sp}) {
@@ -78,17 +78,7 @@ const Image = styled.img`
   }
 `;
 
-const TitleImage = styled.img`
-  max-width: 300px;
-  width: 100%;
-  height: 100px;
-  object-fit: contain;
-
-  @media (max-width: ${breakpoints.sp}) {
-    max-width: calc(50% - 6px);
-    height: auto;
-  }
-`;
+const ServiceName = styled.p``;
 
 export const Mv = () => {
   return (
@@ -101,7 +91,7 @@ export const Mv = () => {
 
       <Name>
         <Image src={logo} alt="" />
-        <TitleImage src={logo2} alt="" />
+        <ServiceName>げんき訪問看護ステーション</ServiceName>
       </Name>
       <MainVisual mvImage={mv} />
     </MainVisualWrap>
