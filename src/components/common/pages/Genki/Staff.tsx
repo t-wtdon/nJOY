@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { Heading } from "../../Heading";
 import { breakpoints } from "../../../../styles/breakpoints";
 
-const staff1 = require("../../../../assets/images/genki/ishii-sp.jpg");
+const staff1 = require("../../../../assets/images/genki/ishii.jpg");
 const staff2 = require("../../../../assets/images/genki/inada.jpg");
-const staff3 = require("../../../../assets/images/genki/katayama-sp.jpg");
+const staff3 = require("../../../../assets/images/genki/katayama.jpg");
 const SPstaff1 = require("../../../../assets/images/genki/ishii-sp.jpg");
 const SPstaff2 = require("../../../../assets/images/genki/inada-sp.jpg");
 const SPstaff3 = require("../../../../assets/images/genki/katayama-sp.jpg");
