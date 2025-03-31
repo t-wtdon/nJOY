@@ -45,7 +45,7 @@ const Item = styled.li`
 const Image = styled.img`
   display: block;
   margin: 0 auto;
-  width: 150px;
+  width: 250px;
   height: 150px;
   object-fit: contain;
 `;
