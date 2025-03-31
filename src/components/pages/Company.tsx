@@ -13,6 +13,10 @@ const ceo = require("../../assets/images/company/ceo.jpg");
 export const Company = () => {
   const Container = styled.section`
     padding-top: 76px; // header分余白を取ってる
+
+    @media (max-width: ${breakpoints.sp}) {
+      padding-top: 74px;
+    }
   `;
 
   const ContentInner = styled.div`

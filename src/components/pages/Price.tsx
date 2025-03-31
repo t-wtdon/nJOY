@@ -10,6 +10,10 @@ import { ScrollToTop } from "../common/ScrollToTop";
 export const Price = () => {
   const Container = styled.section`
     padding-top: 76px; // header分余白を取ってる
+
+    @media (max-width: ${breakpoints.sp}) {
+      padding-top: 74px;
+    }
   `;
 
   const Contents = styled.div`
@@ -25,7 +29,7 @@ export const Price = () => {
     font-size: 24px;
     font-weight: bold;
     margin: 0;
-    color: #ff7f50;
+    color: #ff6600;
     text-align: center;
   `;
 

@@ -65,7 +65,7 @@ const Title = styled.h3`
     left: 0;
     width: 100px;
     height: 1px;
-    background: #ff7f50;
+    background: #ff6600;
   }
 `;
 

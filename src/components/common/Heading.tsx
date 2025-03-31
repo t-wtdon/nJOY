@@ -12,7 +12,7 @@ const HeadingContent = styled.h2`
   font-size: 32px;
   font-weight: bold;
   padding-bottom: 4px;
-  border-bottom: 3px solid #ff7f50;
+  border-bottom: 3px solid #ff6600;
   margin: 0;
 
   @media (max-width: ${breakpoints.sp}) {

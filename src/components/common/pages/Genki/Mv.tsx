@@ -4,7 +4,6 @@ import { breakpoints } from "../../../../styles/breakpoints";
 
 const PCmv = require("../../../../assets/images/genki/mv.jpg");
 const SPmv = require("../../../../assets/images/genki/spMv.jpg");
-const logo = require("../../../../assets/images/genki/genki_logo.png");
 
 const MainVisualWrap = styled.section`
   position: relative;
@@ -27,11 +26,11 @@ const PCMainVisual = styled.div<{ mvImage: string }>`
 const SPMainVisual = styled.div<{ mvImage: string }>`
   display: none;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: 600px;
   margin: 0 auto;
   background: no-repeat url(${(props) => props.mvImage});
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 
   @media (max-width: ${breakpoints.sp}) {
     display: block;
@@ -47,27 +46,29 @@ const Title = styled.h3`
   margin: 0 40px 0;
   line-height: 1.6;
   color: #fff;
+  word-break: keep-all;
 
   @media (max-width: ${breakpoints.tablet}) {
     font-size: 40px;
   }
 
   @media (max-width: ${breakpoints.sp}) {
-    top: 60%;
+    top: 80%;
+    margin-left: 20px;
     font-size: 20px;
   }
 `;
 
 const Title1 = styled.span`
   display: inline-block;
-  background: #ff7f50;
+  background: #ff6600;
 `;
 
 const Title2 = styled.span`
   display: inline-block;
   margin-top: 12px;
   margin-left: 10%;
-  background: #ff7f50;
+  background: #ff6600;
 `;
 
 export const Mv = () => {
