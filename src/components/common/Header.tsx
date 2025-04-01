@@ -23,7 +23,7 @@ const HeaderWrap = styled.header`
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 1);
 `;
 
 const Logo = styled(Link)`
