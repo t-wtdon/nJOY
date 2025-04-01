@@ -16,7 +16,7 @@ const PCMainVisual = styled.div<{ mvImage: string }>`
   margin: 0 auto;
   background: no-repeat url(${(props) => props.mvImage});
   background-size: cover;
-  background-position: center;
+  background-position: top;
 
   @media (max-width: ${breakpoints.sp}) {
     display: none;
@@ -39,7 +39,7 @@ const SPMainVisual = styled.div<{ mvImage: string }>`
 
 const Title = styled.h3`
   position: absolute;
-  top: 50%;
+  top: 65%;
   font-size: 40px;
   font-weight: bold;
   width: calc(100% - 40px);
