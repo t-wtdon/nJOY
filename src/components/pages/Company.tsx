@@ -276,6 +276,10 @@ export const Company = () => {
             <SmallText>メール: </SmallText>njoy3peace@gmail.com
           </Data>
         </Row>
+        <Row>
+          <Head>介護事業所番号</Head>
+          <Data>1465290358</Data>
+        </Row>
       </Table>
 
       <ContentInner>
