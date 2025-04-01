@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
 import { SlideShow } from "../common/pages/Home/Slideshow";
 import { breakpoints } from "../../styles/breakpoints";
-import { Info } from "../common/pages/Home/ Info";
+import { Info } from "../common/Info";
 import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
 
@@ -338,7 +338,7 @@ export const Price = () => {
         </ul>
       </Contents>
       <SlideShow />
-      <Info />
+      <Info type="genki" />
     </Container>
   );
 };

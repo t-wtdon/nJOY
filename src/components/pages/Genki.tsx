@@ -7,7 +7,7 @@ import { Staff } from "../common/pages/Genki/Staff";
 import { Point } from "../common/pages/Genki/Point";
 import { Access } from "../common/pages/Genki/Access";
 import { Vision } from "../common/pages/Genki/Vision";
-import { Info } from "../common/pages/Home/ Info";
+import { Info } from "../common/Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";
@@ -93,7 +93,7 @@ export const Genki = () => {
         <Access />
       </ContentInner>
       <SlideShow />
-      <Info />
+      <Info type="genki" />
     </Container>
   );
 };

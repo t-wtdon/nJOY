@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Heading } from "../../Heading";
-import { breakpoints } from "../../../../styles/breakpoints";
+import { Heading } from "./Heading";
+import { breakpoints } from "../../styles/breakpoints";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const bg = require("../../../../assets/images/home/mv.jpg");
+const bg = require("../../assets/images/home/mv.jpg");
 
 const Container = styled.section<{ bgImage: string }>`
   position: relative;
@@ -103,7 +103,7 @@ const Icon = styled(FontAwesomeIcon)`
   margin-right: 12px;
 `;
 
-export const Info = () => {
+export const Info = ({ type }: { type?: "genki" }) => {
   return (
     <Container bgImage={bg}>
       <ContentWrapper>
@@ -111,7 +111,8 @@ export const Info = () => {
         <ContentBox>
           <Title>ご相談はいつでもお気軽に</Title>
           <Description>
-            「こんなことお願いしていいの？」 「こんな看護はできるの？」
+            {type === "genki" &&
+              "「こんなことお願いしていいの？」 「こんな看護はできるの？」"}
             どんな小さなことでも、まずはお話を聞かせてください。
           </Description>
         </ContentBox>
@@ -123,10 +124,18 @@ export const Info = () => {
             </LinkText>
           </Text>
           <Text>
-            <LinkText href="mailto:Genki.2025.3@gmail.com">
-              <Icon icon={faEnvelope} size="2x" />
-              Genki.2025.3@gmail.com
-            </LinkText>
+            {type === "genki" ? (
+              <LinkText href="mailto:Genki.2025.3@gmail.com">
+                <Icon icon={faEnvelope} size="2x" />
+                Genki.2025.3@gmail.com
+              </LinkText>
+            ) : (
+              <LinkText href="mailto:njoy3peace@gmail.com">
+                <Icon icon={faEnvelope} size="2x" />
+                njoy3peace@gmail.com
+              </LinkText>
+            )}
+
             <SmallText>こちらからお気軽にお問い合わせください</SmallText>
           </Text>
         </Box>

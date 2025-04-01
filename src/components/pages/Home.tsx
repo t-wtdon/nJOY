@@ -4,7 +4,7 @@ import { Mv } from "../common/pages/Home/Mv";
 import { About } from "../common/pages/Home/About";
 import { Features } from "../common/pages/Home/Features";
 import { SlideShow } from "../common/pages/Home/Slideshow";
-import { Info } from "../common/pages/Home/ Info";
+import { Info } from "../common/Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
 import { ScrollToTop } from "../common/ScrollToTop";

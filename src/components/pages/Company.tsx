@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
 import { SlideShow } from "../common/pages/Home/Slideshow";
 import { breakpoints } from "../../styles/breakpoints";
-import { Info } from "../common/pages/Home/ Info";
+import { Info } from "../common/Info";
 import { Access } from "../common/pages/Genki/Access";
 import { PageHeading } from "../common/PageHeading";
 import { ScrollToTop } from "../common/ScrollToTop";
