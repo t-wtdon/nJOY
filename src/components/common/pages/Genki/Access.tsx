@@ -37,6 +37,11 @@ const Text = styled.p`
   text-align: center;
 `;
 
+const SmallText = styled.p`
+  text-align: center;
+  font-size: 14px;
+`;
+
 const BoldText = styled.span`
   font-weight: bold;
 `;
@@ -62,6 +67,7 @@ export const Access = () => {
           <Text>
             <BoldText>住所:</BoldText> 神奈川県川崎市中原区丸子町715-10
           </Text>
+          <SmallText>介護事業所番号: 1465290358</SmallText>
           {/* <Text>
             <BoldText>お車の方:</BoldText> ○○インターを出て、約5分
           </Text>

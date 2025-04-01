@@ -59,6 +59,12 @@ export const Footer = () => {
     font-size: 12px;
   `;
 
+  const SmallText = styled.p`
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 14px;
+  `;
+
   const year = new Date().getFullYear();
 
   return (
@@ -79,6 +85,8 @@ export const Footer = () => {
             </LinkItem>
           </Item>
         </List>
+
+        <SmallText>介護事業所番号: 1465290358</SmallText>
       </Inner>
 
       <Copyright>© {year} 株式会社nJOY. All Rights Reserved.</Copyright>
