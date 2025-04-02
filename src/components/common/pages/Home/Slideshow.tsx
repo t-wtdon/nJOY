@@ -8,7 +8,6 @@ const slide5 = require("../../../../assets/images/slide/slide5.jpg");
 const slide6 = require("../../../../assets/images/slide/slide6.jpg");
 const slide7 = require("../../../../assets/images/slide/slide7.jpg");
 const slide8 = require("../../../../assets/images/slide/slide8.jpg");
-const slide9 = require("../../../../assets/images/slide/slide9.jpg");
 const slide10 = require("../../../../assets/images/slide/slide10.jpg");
 const slide11 = require("../../../../assets/images/slide/slide11.jpg");
 const slide12 = require("../../../../assets/images/slide/slide12.jpg");
@@ -24,7 +23,6 @@ const images = [
   slide6,
   slide7,
   slide8,
-  slide9,
   slide10,
   slide11,
   slide12,

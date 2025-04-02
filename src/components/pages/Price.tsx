@@ -207,24 +207,24 @@ export const Price = () => {
             </Row>
             <Row>
               <TimeData>30分以上60分未満</TimeData>
-              <Data>846単位</Data>
+              <Data>823単位</Data>
               <Data>
-                1割負担: 950円
+                1割負担: 922円
                 <br />
-                2割負担: 1,899円
+                2割負担: 1,831円
                 <br />
-                3割負担: 2,849円
+                3割負担: 2,746円
               </Data>
             </Row>
             <Row>
               <TimeData>60分以上90分未満</TimeData>
-              <Data>1,170単位</Data>
+              <Data>1,128単位</Data>
               <Data>
-                1割負担: 1,300円
+                1割負担: 1,261円
                 <br />
-                2割負担: 2,599円
+                2割負担: 2,509円
                 <br />
-                3割負担: 3,899円
+                3割負担: 3,763円
               </Data>
             </Row>
           </TBody>
