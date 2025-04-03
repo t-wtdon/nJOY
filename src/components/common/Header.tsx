@@ -185,6 +185,15 @@ export const Header = () => {
               利用料金(げんき訪問看護ステーション)
             </MenuLink>
           </MenuItem>
+          <MenuItem>
+            <MenuLink
+              to="/訪問看護医療 DX 情報活用加算.pdf"
+              target="_blank"
+              onClick={toggleMenu}
+            >
+              訪問看護医療 DX 情報活用加算に関するお知らせ（PDF）
+            </MenuLink>
+          </MenuItem>
         </MenuList>
       </MenuBox>
     </HeaderWrap>

@@ -7,6 +7,7 @@ import { Staff } from "../common/pages/Genki/Staff";
 import { Point } from "../common/pages/Genki/Point";
 import { Access } from "../common/pages/Genki/Access";
 import { Vision } from "../common/pages/Genki/Vision";
+import { News } from "../common/pages/Genki/News";
 import { Info } from "../common/Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
@@ -90,6 +91,7 @@ export const Genki = () => {
         <Point />
         <Vision />
         <Staff />
+        <News />
         <Access />
       </ContentInner>
       <SlideShow />

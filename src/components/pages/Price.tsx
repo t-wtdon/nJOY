@@ -63,7 +63,7 @@ export const Price = () => {
   const TBody = styled.tbody``;
 
   const Row = styled.tr`
-    border-bottom: 1px solid #fff5e1;
+    border-bottom: 1px solid #ddd;
   `;
 
   const Head = styled.th`
@@ -236,13 +236,12 @@ export const Price = () => {
           <Item>深夜 (22時〜6時)は50%増</Item>
           <Item>緊急訪問加算(月1回): 668円〜2,002円</Item>
           <Item>
-            特別管理加算(特定疾患・医療依存度が高い方対象): 500円〜1,500円
+            特別管理加算(特定疾患・医療依存度が高い方対象): 556円〜1,668円
           </Item>
-          <Item>退院時共同指導加算: 600円〜2,000円</Item>
-          <Item>ターミナルケア加算(終末期支援) 2,000円</Item>
-          <Item>看護体制強化加算: 300円〜1,200円</Item>
-          <Item>24時間対応体制加算: 500円〜1,000円</Item>
-          <Item>長時間訪問看護加算(90分超の訪問): 1,500円</Item>
+          <Item>退院時共同指導加算: 668円〜2,002円</Item>
+          <Item>ターミナルケア加算(終末期支援) 2,780円〜8,340円</Item>
+          <Item>長時間訪問看護加算(90分超の訪問): 334円〜1,001円</Item>
+          <Item>専門管理加算: 278円～834円</Item>
         </ul>
 
         <h4>交通費</h4>
@@ -263,54 +262,49 @@ export const Price = () => {
         <Table>
           <THead>
             <Row>
-              <TimeHead>訪問時間</TimeHead>
-              <Head>単位数</Head>
+              <TimeHead>訪問日数</TimeHead>
               <Head>負担額</Head>
             </Row>
           </THead>
           <TBody>
             <Row>
-              <TimeData>20分未満</TimeData>
-              <Data>314単位</Data>
+              <TimeData>1日目（週3日まで）</TimeData>
               <Data>
-                1割負担: 250円
+                1割負担: 1,322円
                 <br />
-                2割負担: 500円
+                2割負担: 2,644円
                 <br />
-                3割負担: 750円
+                3割負担: 3,966円
               </Data>
             </Row>
             <Row>
-              <TimeData>30分未満</TimeData>
-              <Data>471単位</Data>
+              <TimeData>1日目（週4日以降）</TimeData>
               <Data>
-                1割負担: 375円
+                1割負担: 1,422円
                 <br />
-                2割負担: 750円
+                2割負担: 2,844円
                 <br />
-                3割負担: 1,125円
+                3割負担: 4,266円
               </Data>
             </Row>
             <Row>
-              <TimeData>30分以上60分未満</TimeData>
-              <Data>846単位</Data>
+              <TimeData>2日目以降（週3日まで）</TimeData>
               <Data>
-                1割負担: 675円
+                1割負担: 855円
                 <br />
-                2割負担: 1,350円
+                2割負担: 1,710円
                 <br />
-                3割負担: 2,025円
+                3割負担: 2,565円
               </Data>
             </Row>
             <Row>
-              <TimeData>60分以上90分未満</TimeData>
-              <Data>1,170単位</Data>
+              <TimeData>2日目以降（週4日以降）</TimeData>
               <Data>
-                1割負担: 950円
+                1割負担: 955円
                 <br />
-                2割負担: 1,900円
+                2割負担: 1,910円
                 <br />
-                3割負担: 2,850円
+                3割負担: 2,865円
               </Data>
             </Row>
           </TBody>
@@ -318,17 +312,17 @@ export const Price = () => {
 
         <h4>加算料金</h4>
         <ul>
-          <Item>早朝 (6時〜8時)・夜間 (18時〜22時)は20%増</Item>
-          <Item>深夜 (22時〜6時)は40%増</Item>
-          <Item>緊急訪問加算(月1回): 500円〜1,500円</Item>
+          <Item>早朝 (6時〜8時)・夜間 (18時〜22時)は210~630円</Item>
+          <Item>深夜 (22時〜6時)は420円~1260円</Item>
+          <Item>緊急訪問看護加算(月1回): 200円〜795円</Item>
           <Item>
-            特別管理加算(特定疾患・医療依存度が高い方対象): 300円〜1,000円
+            特別管理加算(特定疾患・医療依存度が高い方対象): 250円〜1,500円
           </Item>
-          <Item>退院時共同指導加算: 500円〜1,500円</Item>
-          <Item>ターミナルケア加算(終末期支援) 1,500円</Item>
-          <Item>看護体制強化加算: 200円〜800円</Item>
-          <Item>24時間対応体制加算: 400円〜800円</Item>
-          <Item>長時間訪問看護加算(90分超の訪問): 1,200円</Item>
+          <Item>退院時共同指導加算: 800円〜2,400円</Item>
+          <Item>訪問看護ターミナル療養費: 1,000円~7,500円</Item>
+          <Item>24時間対応体制加算: 652円〜1,956円</Item>
+          <Item>長時間訪問看護加算(90分超の訪問): 520円~1,560円</Item>
+          <Item>専門管理加算: 278円～834円</Item>
         </ul>
 
         <h4>交通費</h4>

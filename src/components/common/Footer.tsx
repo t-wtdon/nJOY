@@ -84,6 +84,11 @@ export const Footer = () => {
               利用料金(げんき訪問看護ステーション)
             </LinkItem>
           </Item>
+          <Item>
+            <LinkItem to="/訪問看護医療 DX 情報活用加算.pdf" target="_blank">
+              訪問看護医療 DX 情報活用加算に関するお知らせ（PDF）
+            </LinkItem>
+          </Item>
         </List>
 
         <SmallText>介護事業所番号: 1465290358</SmallText>
