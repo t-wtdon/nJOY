@@ -18,7 +18,14 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: ${breakpoints.sp}) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const LinkText = styled.a`
@@ -30,11 +37,10 @@ const LinkText = styled.a`
   &:link,
   &:visited {
     color: #333;
-    text-decoration: none;
   }
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
 `;
 
@@ -43,6 +49,13 @@ const Date = styled.span`
   font-weight: bold;
   color: #333;
   margin-right: 40px;
+
+  @media (max-width: ${breakpoints.sp}) {
+    margin-right: 0;
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
 `;
 
 export const News = () => {
