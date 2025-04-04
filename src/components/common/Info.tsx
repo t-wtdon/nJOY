@@ -118,9 +118,9 @@ export const Info = ({ type }: { type?: "genki" }) => {
         </ContentBox>
         <Box>
           <Text>
-            <LinkText href="tel:090-8124-6325">
+            <LinkText href="tel:044-322-8711">
               <Icon icon={faPhone} size="2x" />
-              090-8124-6325
+              044-322-8711
             </LinkText>
           </Text>
           <Text>
