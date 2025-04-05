@@ -65,7 +65,8 @@ export const Access = () => {
           ></iframe>
           <Name>げんき訪問看護ステーション</Name>
           <Text>
-            <BoldText>住所:</BoldText> 神奈川県川崎市中原区丸子町715-10
+            <BoldText>住所:</BoldText> 〒211-0005
+            神奈川県川崎市中原区新丸子町715-10 パークサイドパレス1F
           </Text>
           <SmallText>介護事業所番号: 1465290358</SmallText>
           {/* <Text>
