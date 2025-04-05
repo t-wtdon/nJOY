@@ -259,6 +259,7 @@ export const Company = () => {
           <Head>所在地</Head>
           <Data>
             <SmallText>げんき訪問看護ステーション: </SmallText>
+            <br />
             〒211-0005 神奈川県川崎市中原区新丸子町715-10 パークサイドパレス1F
           </Data>
         </Row>
