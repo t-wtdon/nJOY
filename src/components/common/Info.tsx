@@ -125,9 +125,9 @@ export const Info = ({ type }: { type?: "genki" }) => {
           </Text>
           <Text>
             {type === "genki" ? (
-              <LinkText href="mailto:Genki.2025.3@gmail.com">
+              <LinkText href="mailto:genki.2025.3@gmail.com">
                 <Icon icon={faEnvelope} size="2x" />
-                Genki.2025.3@gmail.com
+                genki.2025.3@gmail.com
               </LinkText>
             ) : (
               <LinkText href="mailto:njoy3peace@gmail.com">

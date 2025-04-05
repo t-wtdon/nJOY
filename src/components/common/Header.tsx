@@ -148,9 +148,9 @@ export const Header = () => {
             <SmallIcon icon={faPhone} size="2x" />
             044-322-8711
           </LinkText>
-          <LinkText href="mailto:Genki.2025.3@gmail.com">
+          <LinkText href="mailto:genki.2025.3@gmail.com">
             <SmallIcon icon={faEnvelope} size="2x" />
-            Genki.2025.3@gmail.com
+            genki.2025.3@gmail.com
           </LinkText>
         </ContactMenu>
 
