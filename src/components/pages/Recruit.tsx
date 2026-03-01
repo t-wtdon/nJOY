@@ -210,10 +210,9 @@ export const Recruit = () => {
           content="https://n-joy.jp/assets/images/ogp-genki-recruit.jpg"
         />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+        <Helmet>
+          <script type="application/ld+json">
+            {JSON.stringify({
               "@context": "https://schema.org",
               "@type": "JobPosting",
               title: "訪問看護師",
@@ -249,20 +248,17 @@ export const Recruit = () => {
                 "看護師免許をお持ちの方（所有資格や経験に応じて給与変動あり）",
               jobBenefits:
                 "住宅手当20,000円（規定あり）、子ども手当5,000円／人、オンコール手当3,000円、昇給年1回、業績賞与あり",
-            }),
-          }}
-        />
+            })}
+          </script>
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
+          <script type="application/ld+json">
+            {JSON.stringify({
               "@context": "https://schema.org",
               "@type": "JobPosting",
               title:
                 "訪問リハビリスタッフ（理学療法士・作業療法士・言語聴覚士）",
               description:
-                "川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集しています。月給271,000円〜370,000円。住宅手当・子ども手当あり。年間休日120日以上。理学療法士・作業療法士・言語聴覚士の資格をお持ちの方歓迎。",
+                "川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集しています。月給271,000円〜370,000円。住宅手当・子ども手当・施設夜勤手当あり。年間休日120日以上。理学療法士・作業療法士・言語聴覚士の資格をお持ちの方歓迎。",
               datePosted: "2026-03-01",
               validThrough: "2027-03-31T23:59",
               employmentType: "FULL_TIME",
@@ -293,9 +289,9 @@ export const Recruit = () => {
                 "理学療法士・作業療法士・言語聴覚士いずれかの国家資格をお持ちの方",
               jobBenefits:
                 "住宅手当20,000円（規定あり）、子ども手当5,000円／人、夜勤手当18,000円〜25,000円、昇給年1回、業績賞与あり",
-            }),
-          }}
-        />
+            })}
+          </script>
+        </Helmet>
       </Helmet>
 
       <ScrollToTop />
