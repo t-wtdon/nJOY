@@ -163,11 +163,13 @@ export const Recruit = () => {
   return (
     <Container>
       <Helmet>
-        <title>採用情報 | げんき訪問看護ステーション | 株式会社nJOY</title>
+        <title>
+          川崎市中原区の訪問看護師・訪問リハ求人｜げんき訪問看護ステーション
+        </title>
 
         <meta
           name="description"
-          content="げんき訪問看護ステーション（株式会社nJOY）の採用情報ページです。訪問看護師・スタッフ募集要項、働き方、福利厚生、応募方法についてご案内しています。"
+          content="川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集しています。月給271,000円〜370,000円（固定残業代10時間分含む）。住宅手当・子ども手当・施設夜勤手当あり。理学療法士・作業療法士・言語聴覚士の資格をお持ちの方歓迎。"
         />
         <meta
           name="keywords"
@@ -178,14 +180,15 @@ export const Recruit = () => {
         {/* OGP (Open Graph Protocol) */}
         <meta
           property="og:title"
-          content="採用情報 | げんき訪問看護ステーション | 株式会社nJOY"
+          content="川崎市中原区の訪問看護師・訪問リハ求人｜げんき訪問看護ステーション"
         />
         <meta
           property="og:description"
-          content="げんき訪問看護ステーションでは訪問看護師・スタッフを募集しています。地域医療に貢献したい方、在宅ケアに興味のある方はぜひご応募ください。"
+          content="川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集しています。月給271,000円〜370,000円（固定残業代10時間分含む）。住宅手当・子ども手当・施設夜勤手当あり。理学療法士・作業療法士・言語聴覚士の資格をお持ちの方歓迎。"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://n-joy.jp/genki/recruit" />
+        <meta property="og:url" content="https://n-joy.jp/recruit" />
+        <link rel="canonical" href="https://n-joy.jp/recruit" />
         <meta
           property="og:image"
           content="https://n-joy.jp/assets/images/ogp-genki-recruit.jpg"
@@ -196,15 +199,102 @@ export const Recruit = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="採用情報 | げんき訪問看護ステーション | 株式会社nJOY"
+          content="川崎市中原区の訪問看護師・訪問リハ求人｜げんき訪問看護ステーション"
         />
         <meta
           name="twitter:description"
-          content="げんき訪問看護ステーションでは訪問看護師・スタッフを募集しています。働きやすい環境と充実したサポート体制をご紹介します。"
+          content="川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集しています。月給271,000円〜370,000円（固定残業代10時間分含む）。住宅手当・子ども手当・施設夜勤手当あり。理学療法士・作業療法士・言語聴覚士の資格をお持ちの方歓迎。"
         />
         <meta
           name="twitter:image"
           content="https://n-joy.jp/assets/images/ogp-genki-recruit.jpg"
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "JobPosting",
+              title: "訪問看護師",
+              description:
+                "川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問看護師を募集しています。月給301,000円〜400,000円。住宅手当・子ども手当・オンコール手当あり。年間休日120日以上。",
+              datePosted: "2026-03-01",
+              validThrough: "2027-03-31T23:59",
+              employmentType: "FULL_TIME",
+              hiringOrganization: {
+                "@type": "Organization",
+                name: "株式会社nJOY",
+              },
+              jobLocation: {
+                "@type": "Place",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "川崎市中原区",
+                  addressRegion: "神奈川県",
+                  addressCountry: "JP",
+                },
+              },
+              baseSalary: {
+                "@type": "MonetaryAmount",
+                currency: "JPY",
+                value: {
+                  "@type": "QuantitativeValue",
+                  minValue: 301000,
+                  maxValue: 400000,
+                  unitText: "MONTH",
+                },
+              },
+              qualifications:
+                "看護師免許をお持ちの方（所有資格や経験に応じて給与変動あり）",
+              jobBenefits:
+                "住宅手当20,000円（規定あり）、子ども手当5,000円／人、オンコール手当3,000円、昇給年1回、業績賞与あり",
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "JobPosting",
+              title:
+                "訪問リハビリスタッフ（理学療法士・作業療法士・言語聴覚士）",
+              description:
+                "川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集しています。月給271,000円〜370,000円。住宅手当・子ども手当あり。年間休日120日以上。理学療法士・作業療法士・言語聴覚士の資格をお持ちの方歓迎。",
+              datePosted: "2026-03-01",
+              validThrough: "2027-03-31T23:59",
+              employmentType: "FULL_TIME",
+              hiringOrganization: {
+                "@type": "Organization",
+                name: "株式会社nJOY",
+              },
+              jobLocation: {
+                "@type": "Place",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "川崎市中原区",
+                  addressRegion: "神奈川県",
+                  addressCountry: "JP",
+                },
+              },
+              baseSalary: {
+                "@type": "MonetaryAmount",
+                currency: "JPY",
+                value: {
+                  "@type": "QuantitativeValue",
+                  minValue: 271000,
+                  maxValue: 370000,
+                  unitText: "MONTH",
+                },
+              },
+              qualifications:
+                "理学療法士・作業療法士・言語聴覚士いずれかの国家資格をお持ちの方",
+              jobBenefits:
+                "住宅手当20,000円（規定あり）、子ども手当5,000円／人、夜勤手当18,000円〜25,000円、昇給年1回、業績賞与あり",
+            }),
+          }}
         />
       </Helmet>
 
