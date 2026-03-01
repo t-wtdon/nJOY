@@ -6,7 +6,8 @@ const HeadArea = styled.section<{ bgImgType: string }>`
   text-align: center;
   margin-bottom: 40px;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${(props) =>
       require(`../../assets/images/pageHead/${props.bgImgType}.jpg`)});
 `;
@@ -26,7 +27,7 @@ export const PageHeading = ({
   type,
 }: {
   title: string;
-  type: "company" | "price";
+  type: "company" | "price" | "recruit";
 }) => {
   return (
     <HeadArea bgImgType={type}>

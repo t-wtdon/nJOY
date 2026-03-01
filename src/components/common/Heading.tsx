@@ -14,6 +14,7 @@ const HeadingContent = styled.h2`
   padding-bottom: 4px;
   border-bottom: 4px solid #ff6600;
   margin: 0;
+  word-break: keep-all;
 
   @media (max-width: ${breakpoints.sp}) {
     font-size: 28px;

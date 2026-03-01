@@ -6,6 +6,7 @@ import { Home } from "./components/pages/Home";
 import { Company } from "./components/pages/Company";
 import { Genki } from "./components/pages/Genki";
 import { Price } from "./components/pages/Price";
+import { Recruit } from "./components/pages/Recruit";
 
 export const App = () => {
   return (
@@ -40,6 +41,14 @@ export const App = () => {
           element={
             <DefaultLayout>
               <Price />
+            </DefaultLayout>
+          }
+        />
+        <Route
+          path="/recruit"
+          element={
+            <DefaultLayout>
+              <Recruit />
             </DefaultLayout>
           }
         />

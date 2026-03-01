@@ -31,6 +31,29 @@ const Logo = styled(Link)`
   height: 50px;
 `;
 
+const ButtonLink = styled(Link)`
+  margin: 0 20px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 24px;
+  transition: all 0.3s;
+
+  &:link,
+  &:visited {
+    color: #fff;
+    background: #ff6600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: ${breakpoints.sp}) {
+    display: none;
+  }
+`;
+
 const Image = styled.img`
   height: 50px;
   object-fit: contain;
@@ -154,6 +177,8 @@ export const Header = () => {
           </LinkText>
         </ContactMenu>
 
+        <ButtonLink to="/recruit">採用はこちら</ButtonLink>
+
         <Icon
           icon={faBars}
           size="2x"
@@ -173,6 +198,11 @@ export const Header = () => {
           <MenuItem>
             <MenuLink to="/company" onClick={toggleMenu}>
               会社概要
+            </MenuLink>
+          </MenuItem>
+          <MenuItem>
+            <MenuLink to="/recruit" onClick={toggleMenu}>
+              採用情報
             </MenuLink>
           </MenuItem>
           <MenuItem>
