@@ -256,13 +256,24 @@ export const Recruit = () => {
             "@type": "JobPosting",
             title: "訪問リハビリスタッフ（理学療法士・作業療法士・言語聴覚士）",
             description:
-              "川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集しています。月給271,000円〜370,000円。住宅手当・子ども手当・施設夜勤手当あり。年間休日120日以上。理学療法士・作業療法士・言語聴覚士の資格をお持ちの方歓迎。",
+              "川崎市中原区（武蔵小杉）の訪問看護ステーションで訪問リハビリスタッフを募集。月給271,000円〜370,000円（固定残業代10時間分21,000円〜50,000円含む）。住宅手当・子ども手当あり。昇給年1回、業績賞与あり。",
             datePosted: "2026-03-01",
             validThrough: "2027-03-31T23:59",
             employmentType: "FULL_TIME",
+            identifier: {
+              "@type": "PropertyValue",
+              name: "株式会社nJOY",
+              value: "njoy-rehab-001",
+            },
+            directApply: true,
             hiringOrganization: {
               "@type": "Organization",
               name: "株式会社nJOY",
+            },
+            jobLocationType: "OnSite",
+            applicantLocationRequirements: {
+              "@type": "Country",
+              name: "JP",
             },
             jobLocation: {
               "@type": "Place",
@@ -286,7 +297,7 @@ export const Recruit = () => {
             qualifications:
               "理学療法士・作業療法士・言語聴覚士いずれかの国家資格をお持ちの方",
             jobBenefits:
-              "住宅手当20,000円（規定あり）、子ども手当5,000円／人、夜勤手当18,000円〜25,000円、昇給年1回、業績賞与あり",
+              "固定残業代10時間分支給（超過分別途支給）、住宅手当20,000円（規定あり）、子ども手当5,000円／人、施設夜勤手当18,000円〜25,000円、昇給年1回、業績賞与あり",
           })}
         </script>
       </Helmet>
