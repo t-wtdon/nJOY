@@ -17,7 +17,7 @@ const Container = styled.section`
   }
 `;
 
-type DefaultLayoutProps = {
+type AliceLayoutProps = {
   children: React.ReactNode;
 };
 
@@ -27,13 +27,17 @@ type PageHeadingType = {
 };
 
 const pageHeadingMap: Record<string, PageHeadingType> = {
-  "/company": {
-    title: "会社概要",
-    type: "company",
+  "/alice/facility": {
+    title: "施設・サービス紹介",
+    type: "facility",
+  },
+  "/alice/price": {
+    title: "利用料金",
+    type: "alice-price",
   },
 };
 
-export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
+export const AliceLayout = ({ children }: AliceLayoutProps) => {
   const { pathname } = useLocation();
   const pageHeading = pageHeadingMap[pathname];
 

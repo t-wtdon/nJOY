@@ -17,7 +17,7 @@ const Container = styled.section`
   }
 `;
 
-type DefaultLayoutProps = {
+type GenkiLayoutProps = {
   children: React.ReactNode;
 };
 
@@ -27,13 +27,17 @@ type PageHeadingType = {
 };
 
 const pageHeadingMap: Record<string, PageHeadingType> = {
-  "/company": {
-    title: "会社概要",
-    type: "company",
+  "/genki-station/price": {
+    title: "利用料金",
+    type: "price",
+  },
+  "/recruit": {
+    title: "採用情報",
+    type: "recruit",
   },
 };
 
-export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
+export const GenkiLayout = ({ children }: GenkiLayoutProps) => {
   const { pathname } = useLocation();
   const pageHeading = pageHeadingMap[pathname];
 
@@ -50,7 +54,7 @@ export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
           {children}
 
           <SlideShow />
-          <Info />
+          <Info type="genki" />
         </Container>
       </main>
       <Footer />

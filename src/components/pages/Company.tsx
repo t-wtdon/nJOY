@@ -1,24 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
-import { SlideShow } from "../common/pages/Home/Slideshow";
 import { breakpoints } from "../../styles/breakpoints";
-import { Info } from "../common/Info";
 import { Access } from "../common/pages/Genki/Access";
-import { PageHeading } from "../common/PageHeading";
-import { ScrollToTop } from "../common/ScrollToTop";
 
 const ceo = require("../../assets/images/company/ceo.jpg");
 
 export const Company = () => {
-  const Container = styled.section`
-    padding-top: 76px; // header分余白を取ってる
-
-    @media (max-width: ${breakpoints.sp}) {
-      padding-top: 74px;
-    }
-  `;
-
   const ContentInner = styled.div`
     width: 100%;
     max-width: 1080px;
@@ -135,7 +123,7 @@ export const Company = () => {
   `;
 
   return (
-    <Container>
+    <>
       <Helmet>
         <title>会社概要・代表メッセージ | 株式会社nJOY</title>
 
@@ -181,8 +169,6 @@ export const Company = () => {
           content="https://n-joy.jp/assets/images/ogp.jpg"
         />
       </Helmet>
-      <ScrollToTop />
-      <PageHeading title="会社概要" type="company" />
 
       <Box>
         <Image src={ceo} alt="" />
@@ -286,8 +272,6 @@ export const Company = () => {
       <ContentInner>
         <Access />
       </ContentInner>
-      <SlideShow />
-      <Info />
-    </Container>
+    </>
   );
 };

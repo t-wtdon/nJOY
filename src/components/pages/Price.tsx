@@ -1,21 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
-import { SlideShow } from "../common/pages/Home/Slideshow";
 import { breakpoints } from "../../styles/breakpoints";
-import { Info } from "../common/Info";
-import { PageHeading } from "../common/PageHeading";
-import { ScrollToTop } from "../common/ScrollToTop";
 
 export const Price = () => {
-  const Container = styled.section`
-    padding-top: 76px; // header分余白を取ってる
-
-    @media (max-width: ${breakpoints.sp}) {
-      padding-top: 74px;
-    }
-  `;
-
   const Contents = styled.div`
     max-width: 1080px;
     margin: 60px auto;
@@ -117,7 +105,7 @@ export const Price = () => {
   `;
 
   return (
-    <Container>
+    <>
       <Helmet>
         <title>料金案内 | げんき訪問看護ステーション | 株式会社nJOY</title>
 
@@ -163,9 +151,6 @@ export const Price = () => {
           content="https://n-joy.jp/assets/images/ogp-genki-price.jpg"
         />
       </Helmet>
-
-      <ScrollToTop />
-      <PageHeading title="利用料金" type="price" />
 
       <Contents>
         <Title>
@@ -331,8 +316,6 @@ export const Price = () => {
           <Item>車を使用した場合で10km以上の場合: 1,000円</Item>
         </ul>
       </Contents>
-      <SlideShow />
-      <Info type="genki" />
-    </Container>
+    </>
   );
 };

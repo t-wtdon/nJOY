@@ -1,24 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import styled from "styled-components";
-import { SlideShow } from "../common/pages/Home/Slideshow";
 import { breakpoints } from "../../styles/breakpoints";
-import { Info } from "../common/Info";
-import { PageHeading } from "../common/PageHeading";
-import { ScrollToTop } from "../common/ScrollToTop";
 import { Heading } from "../common/Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 
 export const Recruit = () => {
-  const Container = styled.section`
-    padding-top: 76px; // header分余白を取ってる
-
-    @media (max-width: ${breakpoints.sp}) {
-      padding-top: 74px;
-    }
-  `;
-
   const Contents = styled.div`
     max-width: 1080px;
     margin: 60px auto;
@@ -161,7 +149,7 @@ export const Recruit = () => {
   ];
 
   return (
-    <Container>
+    <>
       <Helmet>
         <title>
           川崎市中原区の訪問看護師・訪問リハ求人｜げんき訪問看護ステーション
@@ -302,9 +290,6 @@ export const Recruit = () => {
         </script>
       </Helmet>
 
-      <ScrollToTop />
-      <PageHeading title="採用情報" type="recruit" />
-
       <Contents>
         <Heading title="地域に寄り添う看護を、一緒に。" />
         <Text>げんき訪問看護ステーションでは 訪問看護師を募集しています。</Text>
@@ -338,8 +323,6 @@ export const Recruit = () => {
           </>
         </List>
       </Contents>
-      <SlideShow />
-      <Info type="genki" />
-    </Container>
+    </>
   );
 };

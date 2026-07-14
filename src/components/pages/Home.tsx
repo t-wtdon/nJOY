@@ -4,19 +4,9 @@ import { Mv } from "../common/pages/Home/Mv";
 import { About } from "../common/pages/Home/About";
 import { Features } from "../common/pages/Home/Features";
 import { SlideShow } from "../common/pages/Home/Slideshow";
-import { Info } from "../common/Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
-import { ScrollToTop } from "../common/ScrollToTop";
 import { Business } from "../common/pages/Home/Business";
-
-const Container = styled.section`
-  padding-top: 76px; // header分余白を取ってる
-
-  @media (max-width: ${breakpoints.sp}) {
-    padding-top: 74px;
-  }
-`;
 
 const ContentInner = styled.div`
   width: 100%;
@@ -33,7 +23,7 @@ const ContentInner = styled.div`
 
 export const Home = () => {
   return (
-    <Container>
+    <>
       <Helmet>
         <title>訪問看護・介護サービスなら株式会社nJOY | 安心の在宅ケア</title>
 
@@ -79,7 +69,6 @@ export const Home = () => {
           content="https://n-joy.jp/assets/images/ogp.jpg"
         />
       </Helmet>
-      <ScrollToTop />
       <Mv />
       <ContentInner>
         <About />
@@ -87,8 +76,6 @@ export const Home = () => {
         <Features />
         <Business />
       </ContentInner>
-      <SlideShow />
-      <Info />
-    </Container>
+    </>
   );
 };

@@ -8,18 +8,8 @@ import { Point } from "../common/pages/Genki/Point";
 import { Access } from "../common/pages/Genki/Access";
 import { Vision } from "../common/pages/Genki/Vision";
 import { News } from "../common/pages/Genki/News";
-import { Info } from "../common/Info";
 import styled from "styled-components";
 import { breakpoints } from "../../styles/breakpoints";
-import { ScrollToTop } from "../common/ScrollToTop";
-
-const Container = styled.section`
-  padding-top: 76px; // header分余白を取ってる
-
-  @media (max-width: ${breakpoints.sp}) {
-    padding-top: 74px;
-  }
-`;
 
 const ContentInner = styled.div`
   width: 100%;
@@ -36,7 +26,7 @@ const ContentInner = styled.div`
 
 export const Genki = () => {
   return (
-    <Container>
+    <>
       <Helmet>
         <title>げんき訪問看護ステーション | 株式会社nJOY</title>
 
@@ -83,7 +73,6 @@ export const Genki = () => {
         />
       </Helmet>
 
-      <ScrollToTop />
       <Mv />
       <About />
       <ContentInner>
@@ -94,8 +83,6 @@ export const Genki = () => {
         <News />
         <Access />
       </ContentInner>
-      <SlideShow />
-      <Info type="genki" />
-    </Container>
+    </>
   );
 };
