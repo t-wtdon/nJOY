@@ -11,15 +11,15 @@ const MainVisualWrap = styled.section`
   display: flex;
 `;
 
-const MainVisual = styled.div<{ mvImage: string; spMvImage: string }>`
+const MainVisual = styled.div<{ $mvImage: string; $spMvImage: string }>`
   width: 100%;
   height: calc(100vh - 74px);
   margin: 0 auto;
-  background: center center no-repeat url(${(props) => props.mvImage});
+  background: center center no-repeat url(${(props) => props.$mvImage});
   background-size: cover;
 
   @media (max-width: ${breakpoints.tablet}) {
-    background: center center no-repeat url(${(props) => props.spMvImage});
+    background: center center no-repeat url(${(props) => props.$spMvImage});
     background-size: cover;
   }
 `;
@@ -59,7 +59,7 @@ export const Mv = () => {
           地域を元気に！
         </Title>
       </Box>
-      <MainVisual mvImage={mv} spMvImage={spMv} />
+      <MainVisual $mvImage={mv} $spMvImage={spMv} />
     </MainVisualWrap>
   );
 };

@@ -42,7 +42,7 @@ const scrollAnimation = keyframes`
 
 const SliderContainer = styled.section`
   position: relative;
-  width: 100vw;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;

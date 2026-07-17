@@ -23,13 +23,13 @@ type DefaultLayoutProps = {
 
 type PageHeadingType = {
   title: string;
-  type: string;
+  imgType: string;
 };
 
 const pageHeadingMap: Record<string, PageHeadingType> = {
   "/company": {
     title: "会社概要",
-    type: "company",
+    imgType: "company",
   },
 };
 
@@ -44,7 +44,10 @@ export const DefaultLayout = ({ children }: DefaultLayoutProps) => {
       <main>
         <Container>
           {pageHeading && (
-            <PageHeading title={pageHeading.title} type={pageHeading.type} />
+            <PageHeading
+              title={pageHeading.title}
+              imgType={pageHeading.imgType}
+            />
           )}
 
           {children}

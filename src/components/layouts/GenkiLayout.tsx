@@ -23,17 +23,17 @@ type GenkiLayoutProps = {
 
 type PageHeadingType = {
   title: string;
-  type: string;
+  imgType: string;
 };
 
 const pageHeadingMap: Record<string, PageHeadingType> = {
   "/genki-station/price": {
-    title: "利用料金",
-    type: "price",
+    title: "げんき訪問看護ステーションの利用料金",
+    imgType: "price",
   },
   "/recruit": {
     title: "採用情報",
-    type: "recruit",
+    imgType: "recruit",
   },
 };
 
@@ -44,11 +44,15 @@ export const GenkiLayout = ({ children }: GenkiLayoutProps) => {
   return (
     <>
       <ScrollToTop />
-      <Header />
+      <Header type="genki" />
       <main>
         <Container>
           {pageHeading && (
-            <PageHeading title={pageHeading.title} type={pageHeading.type} />
+            <PageHeading
+              title={pageHeading.title}
+              imgType={pageHeading.imgType}
+              type="genki"
+            />
           )}
 
           {children}
@@ -57,7 +61,7 @@ export const GenkiLayout = ({ children }: GenkiLayoutProps) => {
           <Info type="genki" />
         </Container>
       </main>
-      <Footer />
+      <Footer type="genki" />
     </>
   );
 };

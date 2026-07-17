@@ -6,122 +6,124 @@ import { Access } from "../common/pages/Genki/Access";
 
 const ceo = require("../../assets/images/company/ceo.jpg");
 
-export const Company = () => {
-  const ContentInner = styled.div`
-    width: 100%;
-    max-width: 1080px;
-    width: calc(100% - 40px);
+const ContentInner = styled.div`
+  width: 100%;
+  max-width: 1080px;
+  width: calc(100% - 40px);
+  margin: 0 auto 80px;
+  padding: 0 20px;
+
+  @media (max-width: ${breakpoints.sp}) {
+    padding: 0 12px;
     margin: 0 auto 80px;
-    padding: 0 20px;
+  }
+`;
 
-    @media (max-width: ${breakpoints.sp}) {
-      padding: 0 12px;
-      margin: 0 auto 80px;
-    }
-  `;
+const TableWrapper = styled.div`
+  max-width: 1080px;
+  padding: 0 15px;
+  margin: 0 auto;
+`;
 
-  const Table = styled.table`
-    display: block;
+const Table = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+`;
+
+const Row = styled.tr`
+  display: block;
+  border-top: 1px solid #dae0e0;
+
+  &:last-child {
+    border-bottom: 1px solid #dae0e0;
+  }
+`;
+const Head = styled.th`
+  padding: 12px;
+  width: 130px;
+  background: #f7f7f7;
+
+  @media (max-width: ${breakpoints.sp}) {
+    font-size: 14px;
+  }
+`;
+const Data = styled.td`
+  padding: 12px;
+  letter-spacing: 0.06em;
+
+  @media (max-width: ${breakpoints.sp}) {
+    font-size: 14px;
+  }
+`;
+
+const SmallText = styled.span`
+  font-weight: bold;
+`;
+
+const Box = styled.div`
+  display: flex;
+  align-items: start;
+  gap: 24px;
+  margin: 40px auto;
+  padding: 0 15px;
+  max-width: 1080px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-wrap: wrap;
+  }
+`;
+
+const Image = styled.img`
+  width: 50%;
+  max-width: 500px;
+  object-fit: cover;
+
+  @media (max-width: ${breakpoints.tablet}) {
     width: 100%;
-    max-width: 1080px;
-    padding: 0 15px;
-    margin: 0 auto;
-    border-collapse: collapse;
-  `;
+  }
+`;
 
-  const Row = styled.tr`
-    display: block;
-    border-top: 1px solid #dae0e0;
+const Contents = styled.div`
+  width: calc(50% - 12px);
 
-    &:last-child {
-      border-bottom: 1px solid #dae0e0;
-    }
-  `;
-  const Head = styled.th`
-    padding: 12px;
-    width: 130px;
-    background: #f7f7f7;
-
-    @media (max-width: ${breakpoints.sp}) {
-      font-size: 14px;
-    }
-  `;
-  const Data = styled.td`
-    padding: 12px;
-    letter-spacing: 0.06em;
-
-    @media (max-width: ${breakpoints.sp}) {
-      font-size: 14px;
-    }
-  `;
-
-  const SmallText = styled.span`
-    font-weight: bold;
-  `;
-
-  const Box = styled.div`
-    display: flex;
-    align-items: start;
-    gap: 24px;
-    margin: 40px auto;
-    padding: 0 15px;
-    max-width: 1080px;
+  @media (max-width: ${breakpoints.tablet}) {
     width: 100%;
-    box-sizing: border-box;
+  }
+`;
 
-    @media (max-width: ${breakpoints.tablet}) {
-      flex-wrap: wrap;
-    }
-  `;
+const Position = styled.p`
+  margin: 0 0 24px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.06em;
 
-  const Image = styled.img`
-    width: 50%;
-    max-width: 500px;
-    object-fit: cover;
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-top: 0;
+    text-align: center;
+  }
+`;
 
-    @media (max-width: ${breakpoints.tablet}) {
-      width: 100%;
-    }
-  `;
+const Name = styled.span`
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+`;
 
-  const Contents = styled.div`
-    width: calc(50% - 12px);
+const Text = styled.p`
+  font-size: 16px;
+  line-height: 1.6;
+`;
 
-    @media (max-width: ${breakpoints.tablet}) {
-      width: 100%;
-    }
-  `;
+const BigTitle = styled.span`
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: bold;
+`;
 
-  const Position = styled.p`
-    margin: 0 0 24px;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 0.06em;
-
-    @media (max-width: ${breakpoints.tablet}) {
-      margin-top: 0;
-      text-align: center;
-    }
-  `;
-
-  const Name = styled.span`
-    margin-left: 20px;
-    font-size: 30px;
-    font-weight: bold;
-  `;
-
-  const Text = styled.p`
-    font-size: 16px;
-    line-height: 1.6;
-  `;
-
-  const BigTitle = styled.span`
-    display: block;
-    margin-bottom: 8px;
-    font-size: 20px;
-    font-weight: bold;
-  `;
-
+export const Company = () => {
   return (
     <>
       <Helmet>
@@ -228,46 +230,51 @@ export const Company = () => {
         </Text>
       </Box>
 
-      <Table>
-        <Row>
-          <Head>会社名</Head>
-          <Data>株式会社nJOY</Data>
-        </Row>
-        <Row>
-          <Head>取締役</Head>
-          <Data>石井達也</Data>
-        </Row>
-        <Row>
-          <Head>設立年月日</Head>
-          <Data>令和6年12月16日</Data>
-        </Row>
-        <Row>
-          <Head>所在地</Head>
-          <Data>
-            <SmallText>げんき訪問看護ステーション: </SmallText>
-            <br />
-            〒211-0005 神奈川県川崎市中原区新丸子町715-10 パークサイドパレス1F
-          </Data>
-        </Row>
-        <Row>
-          <Head>事業内容</Head>
-          <Data>訪問看護事業</Data>
-        </Row>
-        <Row>
-          <Head>従業員数</Head>
-          <Data>3人</Data>
-        </Row>
-        <Row>
-          <Head>連絡先</Head>
-          <Data>
-            <SmallText>メール: </SmallText>njoy3peace@gmail.com
-          </Data>
-        </Row>
-        <Row>
-          <Head>介護事業所番号</Head>
-          <Data>1465290358</Data>
-        </Row>
-      </Table>
+      <TableWrapper>
+        <Table>
+          <tbody>
+            <Row>
+              <Head>会社名</Head>
+              <Data>株式会社nJOY</Data>
+            </Row>
+            <Row>
+              <Head>取締役</Head>
+              <Data>石井達也</Data>
+            </Row>
+            <Row>
+              <Head>設立年月日</Head>
+              <Data>令和6年12月16日</Data>
+            </Row>
+            <Row>
+              <Head>所在地</Head>
+              <Data>
+                <SmallText>げんき訪問看護ステーション: </SmallText>
+                <br />
+                〒211-0005 神奈川県川崎市中原区新丸子町715-10
+                パークサイドパレス1F
+              </Data>
+            </Row>
+            <Row>
+              <Head>事業内容</Head>
+              <Data>訪問看護事業</Data>
+            </Row>
+            <Row>
+              <Head>従業員数</Head>
+              <Data>3人</Data>
+            </Row>
+            <Row>
+              <Head>連絡先</Head>
+              <Data>
+                <SmallText>メール: </SmallText>njoy3peace@gmail.com
+              </Data>
+            </Row>
+            <Row>
+              <Head>介護事業所番号</Head>
+              <Data>1465290358</Data>
+            </Row>
+          </tbody>
+        </Table>
+      </TableWrapper>
 
       <ContentInner>
         <Access />

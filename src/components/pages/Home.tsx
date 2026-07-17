@@ -70,9 +70,10 @@ export const Home = () => {
         />
       </Helmet>
       <Mv />
+      <About />
+      <SlideShow />
+
       <ContentInner>
-        <About />
-        <SlideShow />
         <Features />
         <Business />
       </ContentInner>

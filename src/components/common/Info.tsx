@@ -7,10 +7,10 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const bg = require("../../assets/images/home/mv.jpg");
 
-const Container = styled.section<{ bgImage: string }>`
+const Container = styled.section<{ $bgImage: string }>`
   position: relative;
   padding: 60px 0;
-  background: center center no-repeat url(${(props) => props.bgImage});
+  background: center center no-repeat url(${(props) => props.$bgImage});
   background-size: cover;
   color: #fff;
 
@@ -63,7 +63,8 @@ const Text = styled.p`
   word-break: break-all;
 `;
 
-const SmallText = styled.p`
+const SmallText = styled.span`
+  display: block;
   margin: 0;
   margin-top: 8px;
   font-size: 15px;
@@ -103,38 +104,45 @@ const Icon = styled(FontAwesomeIcon)`
   margin-right: 12px;
 `;
 
-export const Info = ({ type }: { type?: "genki" }) => {
+const typeObj = {
+  default: {
+    mailto: "njoy3peace@gmail.com",
+    tel: "044-322-8711",
+    text: undefined,
+  },
+  genki: {
+    mailto: "genki.2025.3@gmail.com",
+    tel: "044-322-8711",
+    text: "「こんなことお願いしていいの？」 「こんな看護はできるの？」",
+  },
+};
+
+type typeProps = "default" | "genki";
+
+export const Info = ({ type = "default" }: { type?: typeProps }) => {
   return (
-    <Container bgImage={bg}>
+    <Container $bgImage={bg}>
       <ContentWrapper>
         <Heading title="お問い合わせ" />
         <ContentBox>
           <Title>ご相談はいつでもお気軽に</Title>
           <Description>
-            {type === "genki" &&
-              "「こんなことお願いしていいの？」 「こんな看護はできるの？」"}
+            {typeObj[type].text}
             どんな小さなことでも、まずはお話を聞かせてください。
           </Description>
         </ContentBox>
         <Box>
           <Text>
-            <LinkText href="tel:044-322-8711">
+            <LinkText href={`tel:${typeObj[type].tel}`}>
               <Icon icon={faPhone} size="2x" />
-              044-322-8711
+              {typeObj[type].tel}
             </LinkText>
           </Text>
           <Text>
-            {type === "genki" ? (
-              <LinkText href="mailto:genki.2025.3@gmail.com">
-                <Icon icon={faEnvelope} size="2x" />
-                genki.2025.3@gmail.com
-              </LinkText>
-            ) : (
-              <LinkText href="mailto:njoy3peace@gmail.com">
-                <Icon icon={faEnvelope} size="2x" />
-                njoy3peace@gmail.com
-              </LinkText>
-            )}
+            <LinkText href={`mailto:${typeObj[type].mailto}`}>
+              <Icon icon={faEnvelope} size="2x" />
+              {typeObj[type].mailto}
+            </LinkText>
 
             <SmallText>こちらからお気軽にお問い合わせください</SmallText>
           </Text>

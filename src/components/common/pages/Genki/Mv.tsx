@@ -10,11 +10,11 @@ const MainVisualWrap = styled.section`
   display: flex;
 `;
 
-const PCMainVisual = styled.div<{ mvImage: string }>`
+const PCMainVisual = styled.div<{ $mvImage: string }>`
   width: 100%;
   height: calc(100vh - 70px);
   margin: 0 auto;
-  background: no-repeat url(${(props) => props.mvImage});
+  background: no-repeat url(${(props) => props.$mvImage});
   background-size: cover;
   background-position: top;
 
@@ -23,12 +23,12 @@ const PCMainVisual = styled.div<{ mvImage: string }>`
   }
 `;
 
-const SPMainVisual = styled.div<{ mvImage: string }>`
+const SPMainVisual = styled.div<{ $mvImage: string }>`
   display: none;
   width: 100%;
   height: 600px;
   margin: 0 auto;
-  background: no-repeat url(${(props) => props.mvImage});
+  background: no-repeat url(${(props) => props.$mvImage});
   background-size: cover;
   background-position: center -20px;
 
@@ -80,8 +80,8 @@ export const Mv = () => {
         <Title2>心に届くケアをモットーに。</Title2>
       </Title>
 
-      <PCMainVisual mvImage={PCmv} />
-      <SPMainVisual mvImage={SPmv} />
+      <PCMainVisual $mvImage={PCmv} />
+      <SPMainVisual $mvImage={SPmv} />
     </MainVisualWrap>
   );
 };

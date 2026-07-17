@@ -10,6 +10,12 @@ const Container = styled.section`
   }
 `;
 
+const InnerContainer = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+`;
+
 const Title = styled.h2`
   display: block;
   text-align: center;
@@ -48,37 +54,40 @@ const Box = styled.div`
 export const About = () => {
   return (
     <Container>
-      <Title>nJOYの目指すもの</Title>
+      <InnerContainer>
+        <Title>nJOYの目指すもの</Title>
 
-      <Box>
-        <Text>
-          私たちは、看護師としての力を最大限に活かし、関わるすべての人に活力と元気を届けることで、社会に貢献する会社を目指しています。
-        </Text>
-        <Text>
-          看護師の活躍の場を広げ、看護のすばらしさをもっと世の中に伝えることも私たちの使命です。
-        </Text>
-        <Text>
-          そのために、スタッフが安心して長く働ける環境づくりに力を入れ、お客様には常に最高のサービスを提供し続けます。
-        </Text>
-        <Text>
-          「看護を楽しむ」をモットーに、いつでも誰にでも頼れる存在でありたいと考えています。
-        </Text>
-        <Text>
-          そして、笑顔の瞬間を増やし、地域の健康づくりや療養生活の支援に全力を尽くしていきます。
-        </Text>
-      </Box>
+        <Box>
+          <Text>
+            私たちは、看護師としての力を最大限に活かし、関わるすべての人に活力と元気を届けることで、社会に貢献する会社を目指しています。
+          </Text>
+          <Text>
+            看護師の活躍の場を広げ、看護のすばらしさをもっと世の中に伝えることも私たちの使命です。
+          </Text>
+          <Text>
+            そのために、スタッフが安心して長く働ける環境づくりに力を入れ、お客様には常に最高のサービスを提供し続けます。
+          </Text>
+          <Text>
+            「看護を楽しむ」をモットーに、いつでも誰にでも頼れる存在でありたいと考えています。
+          </Text>
+          <Text>
+            そして、笑顔の瞬間を増やし、地域の健康づくりや療養生活の支援に全力を尽くしていきます。
+          </Text>
+        </Box>
 
-      <Box>
-        <SubTitle>nJOYが目指す未来</SubTitle>
+        <Box>
+          <SubTitle>nJOYが目指す未来</SubTitle>
 
-        <Text>
-          私たちnJOYは、<SubText>看護を楽しみ、地域を元気に！</SubText>を胸に、
-          関わるすべての人が安心し、笑顔になれる社会を目指しています。
-        </Text>
-        <Text>
-          これからも、あなたの「やりたい」を一緒に叶え、あなたらしい暮らしを応援し続けます。
-        </Text>
-      </Box>
+          <Text>
+            私たちnJOYは、<SubText>看護を楽しみ、地域を元気に！</SubText>
+            を胸に、
+            関わるすべての人が安心し、笑顔になれる社会を目指しています。
+          </Text>
+          <Text>
+            これからも、あなたの「やりたい」を一緒に叶え、あなたらしい暮らしを応援し続けます。
+          </Text>
+        </Box>
+      </InnerContainer>
     </Container>
   );
 };
